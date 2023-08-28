@@ -153,19 +153,52 @@
 			<!-- sitemap -->
 			<section class="sitemap section-indent-top" id="sitemap">
 				<div class="container">
-					<nav class="sitemap__nav">
-						<ul class="sitemap__list">
-							<li class="sitemap__item">
-								<a href="index.html" class="sitemap__link" target="_blank">Главная</a>
-							</li>
-							<li class="sitemap__item">
-								<a href="about.html" class="sitemap__link" target="_blank">О компании</a>
-							</li>
-							<li class="sitemap__item">
-								<a href="news.html" class="sitemap__link" target="_blank">Новости</a>
-							</li>
-						</ul>
-					</nav>
+					<div class="sitemap__nav">
+						<div class="sitemap__block">
+							<h3 class="sitemap__heading">Главная страница</h3>
+							<ul class="sitemap__list">
+								<li class="sitemap__item">
+									<a href="index.html" class="sitemap__link" target="_blank">Главная</a>
+								</li>
+							</ul>
+						</div>
+						<div class="sitemap__block">
+							<h3 class="sitemap__heading">1.2 О нас (Почему мы, Наша команда, Реквизиты и документы, Новости, Карьера)</h3>
+							<ul class="sitemap__list">
+								<li class="sitemap__item">
+									<a href="about.html" class="sitemap__link" target="_blank">О компании</a>
+								</li>
+								<li class="sitemap__item">
+									<a href="career.html" class="sitemap__link" target="_blank">Карьера</a>
+								</li>
+								<li class="sitemap__item">
+									<a href="news.html" class="sitemap__link" target="_blank">Новости</a>
+								</li>
+							</ul>
+						</div>
+						<div class="sitemap__block">
+							<h3 class="sitemap__heading">1.6 Полезные материалы</h3>
+							<ul class="sitemap__list">
+								<li class="sitemap__item">
+									<a href="useful-materials.html" class="sitemap__link" target="_blank">Полезные материалы по банкротству</a>
+								</li>
+								<li class="sitemap__item">
+									<a href="collectors.html" class="sitemap__link" target="_blank">Коллекторы и приставы</a>
+								</li>
+							</ul>
+						</div>
+						<div class="sitemap__block">
+							<h3 class="sitemap__heading">1.11 Акции</h3>
+							<ul class="sitemap__list">
+								<li class="sitemap__item">
+									<a href="stock.html" class="sitemap__link" target="_blank">Акции</a>
+								</li>
+								<li class="sitemap__item">
+									<a href="winners.html" class="sitemap__link" target="_blank">Наши победители</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</section>
 			<!-- end of sitemap -->
@@ -391,6 +424,52 @@
 		<div class="menu__wrap"></div>
 	</div>
 	<!-- end of menu -->
+	<!-- mobile nav -->
+	<nav class="mobile-nav" id="mobile-nav">
+		<ul class="mobile-nav__list">
+			<li class="mobile-nav__item is--active">
+				<a href="index.html" class="mobile-nav__link">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-home"></use>
+					</svg>
+					<span>Главная</span>
+				</a>
+			</li>
+			<li class="mobile-nav__item">
+				<a href="#" class="mobile-nav__link">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-search"></use>
+					</svg>
+					<span>Поиск</span>
+				</a>
+			</li>
+			<li class="mobile-nav__item">
+				<a href="#" class="mobile-nav__link">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-case"></use>
+					</svg>
+					<span>Услуги</span>
+				</a>
+			</li>
+			<li class="mobile-nav__item">
+				<a href="#" class="mobile-nav__link">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-calculator"></use>
+					</svg>
+					<span>Калькулятор</span>
+				</a>
+			</li>
+			<li class="mobile-nav__item">
+				<a href="#" class="mobile-nav__link">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-user"></use>
+					</svg>
+					<span>Кабинет</span>
+				</a>
+			</li>
+			</u>
+	</nav>
+	<!-- end of mobile nav -->
 	<!-- modals -->
 	<div class="modal" id="modal-city-selection">
 		<div class="modal__wrap">
