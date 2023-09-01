@@ -303,6 +303,34 @@
 									</select>
 								</div>
 							</div>
+							<article class="small-banner all-reviews__banner">
+								<div class="small-banner__wrapper">
+									<div class="small-banner__body">
+										<h3 class="small-banner__title">Поделитесь своим опытом</h3>
+										<p class="small-banner__description">Ваш отзыв очень важен для людей, которые оказались в похожей ситуаци</p>
+										<a href="#" class="small-banner__btn btn modal-btn" data-id="modal-add-review">Оставить отзыв</a>
+									</div>
+								</div>
+							</article>
+							<article class="small-banner all-reviews__banner">
+								<div class="small-banner__wrapper small-banner__wrapper--border">
+									<div class="small-banner__body">
+										<h3 class="small-banner__title">Отзывы на сторонних ресурсах</h3>
+										<p class="small-banner__description">С 2015 года нашими услугами воспользовались более 3000 клиентов и оценили нашу работу, оставив отзывы, на различных авторитетных Интернет-площадках</p>
+										<div class="small-banner__images">
+											<picture class="small-banner__image">
+												<img src="img/yandex.svg" alt="Яндекс">
+											</picture>
+											<picture class="small-banner__image">
+												<img src="img/google.svg" alt="Google">
+											</picture>
+											<picture class="small-banner__image">
+												<img src="img/y.svg" alt="Y">
+											</picture>
+										</div>
+									</div>
+								</div>
+							</article>
 						</div>
 					</div>
 				</div>
@@ -1297,6 +1325,105 @@
 					<div class="modal__buttons">
 						<a href="#" class="modal__btn btn">Перейти в личный кабинет</a>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-add-review">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="modal__top">
+					<h2 class="modal__heading">Оставить отзыв</h2>
+				</div>
+				<div class="modal__content">
+					<form action="#" class="modal-form modal__form">
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<input type="text" id="modal-add-review-name" class="input-field__input" placeholder="Ваше имя*">
+							</div>
+						</div>
+						<div class="select-rating modal-form__input">
+							<div class="select-rating__wrapper">
+								<span class="select-rating__title">Оценка</span>
+								<div class="select-rating__inner">
+									<input type="radio" id="modal-add-review-rating-05" class="select-rating__input" name="modal-add-review-rating" value="5">
+									<label for="modal-add-review-rating-05" class="select-rating__label">
+										<svg class="select-rating__icon select-rating__icon--default">
+											<use xlink:href="img/sprite.svg#icon-star-filled-grey"></use>
+										</svg>
+										<svg class="select-rating__icon select-rating__icon--active">
+											<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+										</svg>
+									</label>
+									<input type="radio" id="modal-add-review-rating-04" class="select-rating__input" name="modal-add-review-rating" value="4">
+									<label for="modal-add-review-rating-04" class="select-rating__label">
+										<svg class="select-rating__icon select-rating__icon--default">
+											<use xlink:href="img/sprite.svg#icon-star-filled-grey"></use>
+										</svg>
+										<svg class="select-rating__icon select-rating__icon--active">
+											<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+										</svg>
+									</label>
+									<input type="radio" id="modal-add-review-rating-03" class="select-rating__input" name="modal-add-review-rating" value="3">
+									<label for="modal-add-review-rating-03" class="select-rating__label">
+										<svg class="select-rating__icon select-rating__icon--default">
+											<use xlink:href="img/sprite.svg#icon-star-filled-grey"></use>
+										</svg>
+										<svg class="select-rating__icon select-rating__icon--active">
+											<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+										</svg>
+									</label>
+									<input type="radio" id="modal-add-review-rating-02" class="select-rating__input" name="modal-add-review-rating" value="2">
+									<label for="modal-add-review-rating-02" class="select-rating__label">
+										<svg class="select-rating__icon select-rating__icon--default">
+											<use xlink:href="img/sprite.svg#icon-star-filled-grey"></use>
+										</svg>
+										<svg class="select-rating__icon select-rating__icon--active">
+											<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+										</svg>
+									</label>
+									<input type="radio" id="modal-add-review-rating-01" class="select-rating__input" name="modal-add-review-rating" value="1">
+									<label for="modal-add-review-rating-01" class="select-rating__label">
+										<svg class="select-rating__icon select-rating__icon--default">
+											<use xlink:href="img/sprite.svg#icon-star-filled-grey"></use>
+										</svg>
+										<svg class="select-rating__icon select-rating__icon--active">
+											<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+										</svg>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="default-select modal-form__input">
+							<select class="js-select">
+								<option data-placeholder="true">Регион</option>
+								<option value="0">Карачаево-Черкесская Республика</option>
+								<option value="1">Москва</option>
+								<option value="2">Санкт-Петербург</option>
+								<option value="3">Екатеринбург</option>
+								<option value="4">Краснодар</option>
+								<option value="5">Пермь</option>
+							</select>
+						</div>
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<input type="text" id="modal-add-review-text" class="input-field__input" placeholder="Сколько списано долгов">
+							</div>
+						</div>
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<textarea id="modal-add-review-description" class="input-field__textarea" placeholder="Текст отзыва"></textarea>
+							</div>
+						</div>
+						<span class="form-error">Неверный логин или номер телефона</span>
+						<button class="modal-form__btn btn">Отправить</button>
+						<p class="modal-form__help"><b>Я согласен с</b> <a href="#">политикой конфиденциальности</a></p>
+					</form>
 				</div>
 			</div>
 		</div>
