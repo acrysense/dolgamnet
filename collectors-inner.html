@@ -750,8 +750,50 @@
 								<input type="tel" id="modal-free-consultation-phone" class="input-field__input" placeholder="+7" data-inputmask="'mask': '+7 (999) 999-99-99'">
 							</div>
 						</div>
-						<span class="form-error">Неверный логин или номер телефона</span>
+						<span class="form-error">Неверное имя или номер телефона</span>
 						<button class="modal-form__btn btn">Запросить бесплатную консультацию</button>
+						<p class="modal-form__help"><b>Я согласен с</b> <a href="#">политикой конфиденциальности</a></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-consultation">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="modal__top">
+					<h2 class="modal__heading">Записаться на консультацию</h2>
+					<p class="modal__description">Испытываете трудности оплатой финансовых <br>обязательств? Оставьте заявку и наш менеджер свяжется с вами в течении часа.</p>
+				</div>
+				<div class="modal__content">
+					<form action="#" class="modal-form modal__form">
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<input type="text" id="modal-consultation-name" class="input-field__input" placeholder="Ваше имя*">
+							</div>
+						</div>
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<input type="tel" id="modal-consultation-phone" class="input-field__input" placeholder="+7" data-inputmask="'mask': '+7 (999) 999-99-99'">
+							</div>
+						</div>
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<input type="email" id="modal-consultation-email" class="input-field__input" placeholder="E-mail*">
+							</div>
+						</div>
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<input type="number" id="modal-consultation-time" class="input-field__input" placeholder="Укажите время посещения с 10:00 до 7:00">
+							</div>
+						</div>
+						<span class="form-error">Неверное имя, номер телефона или e-mail</span>
+						<button class="modal-form__btn btn">Записаться на консультацию</button>
 						<p class="modal-form__help"><b>Я согласен с</b> <a href="#">политикой конфиденциальности</a></p>
 					</form>
 				</div>
