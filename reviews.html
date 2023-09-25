@@ -318,15 +318,15 @@
 										<h3 class="small-banner__title">Отзывы на сторонних ресурсах</h3>
 										<p class="small-banner__description">С 2015 года нашими услугами воспользовались более 3000 клиентов и оценили нашу работу, оставив отзывы, на различных авторитетных Интернет-площадках</p>
 										<div class="small-banner__images">
-											<picture class="small-banner__image">
+											<a href="#" class="small-banner__image">
 												<img src="img/yandex.svg" alt="Яндекс">
-											</picture>
-											<picture class="small-banner__image">
+											</a>
+											<a href="#" class="small-banner__image">
 												<img src="img/google.svg" alt="Google">
-											</picture>
-											<picture class="small-banner__image">
+											</a>
+											<a href="#" class="small-banner__image">
 												<img src="img/y.svg" alt="Y">
-											</picture>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -677,7 +677,7 @@
 							<div class="city-selection__top">
 								<div class="input-field city-selection__input">
 									<div class="input-field__inner">
-										<input type="text" class="input-field__input" placeholder="Ваш город">
+										<input type="text" id="modal-city-selection-input" class="input-field__input" placeholder="Ваш город">
 									</div>
 								</div>
 							</div>
@@ -827,7 +827,13 @@
 						</div>
 						<span class="form-error">Неверное имя или номер телефона</span>
 						<button class="modal-form__btn btn">Запросить бесплатную консультацию</button>
-						<p class="modal-form__help"><b>Я согласен с</b> <a href="#">политикой конфиденциальности</a></p>
+						<div class="square-checkbox modal-form__checkbox">
+							<input type="checkbox" class="square-checkbox__input" id="modal-free-consultation-policy" required>
+							<label for="modal-free-consultation-policy" class="square-checkbox__group">
+								<span class="square-checkbox__icon"></span>
+								<span class="square-checkbox__title">Я согласен с <a href="#">политикой конфиденциальности</a></span>
+							</label>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -869,7 +875,13 @@
 						</div>
 						<span class="form-error">Неверное имя, номер телефона или e-mail</span>
 						<button class="modal-form__btn btn">Записаться на консультацию</button>
-						<p class="modal-form__help"><b>Я согласен с</b> <a href="#">политикой конфиденциальности</a></p>
+						<div class="square-checkbox modal-form__checkbox">
+							<input type="checkbox" class="square-checkbox__input" id="modal-consultation-policy" required>
+							<label for="modal-consultation-policy" class="square-checkbox__group">
+								<span class="square-checkbox__icon"></span>
+								<span class="square-checkbox__title">Я согласен с <a href="#">политикой конфиденциальности</a></span>
+							</label>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -924,7 +936,7 @@
 						</div>
 						<div class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="password" class="input-field__input" placeholder="Введите пароль">
+								<input type="password" id="login-password" class="input-field__input" placeholder="Введите пароль">
 								<button class="input-field__visibility">
 									<svg class="input-field__visibility-icon input-field__visibility-icon--default">
 										<use xlink:href="img/sprite.svg#icon-eye-off"></use>
@@ -1195,7 +1207,7 @@
 					<form action="#" class="modal-form modal__form">
 						<div class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="password" class="input-field__input" placeholder="Пароль*">
+								<input type="password" id="register-ending-password" class="input-field__input" placeholder="Пароль*">
 								<button class="input-field__visibility">
 									<svg class="input-field__visibility-icon input-field__visibility-icon--default">
 										<use xlink:href="img/sprite.svg#icon-eye-off"></use>
@@ -1208,7 +1220,7 @@
 						</div>
 						<div class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="password" class="input-field__input" placeholder="Повторите пароль*">
+								<input type="password" id="register-ending-password-repeat" class="input-field__input" placeholder="Повторите пароль*">
 								<button class="input-field__visibility">
 									<svg class="input-field__visibility-icon input-field__visibility-icon--default">
 										<use xlink:href="img/sprite.svg#icon-eye-off"></use>
@@ -1252,7 +1264,7 @@
 					<form action="#" class="modal-form modal__form">
 						<div class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="tel" class="input-field__input" placeholder="+7" data-inputmask="'mask': '+7 (999) 999-99-99'">
+								<input type="tel" id="register-contract-phone" class="input-field__input" placeholder="+7" data-inputmask="'mask': '+7 (999) 999-99-99'">
 							</div>
 						</div>
 						<span class="form-error">Неверный номер телефона</span>
@@ -1280,7 +1292,7 @@
 					<form action="#" class="modal-form modal__form">
 						<div class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="number" class="input-field__input" placeholder="Введите код">
+								<input type="number" id="register-contract-phone-code" class="input-field__input" placeholder="Введите код">
 							</div>
 						</div>
 						<span class="form-error">Неверный код</span>
@@ -1310,17 +1322,17 @@
 					<form action="#" class="modal-form modal__form">
 						<div class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="text" class="input-field__input" placeholder="ФИО*">
+								<input type="text" id="register-contract-ending-name" class="input-field__input" placeholder="ФИО*">
 							</div>
 						</div>
 						<div class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="email" class="input-field__input" placeholder="E-mail*">
+								<input type="email" id="register-contract-ending-email" class="input-field__input" placeholder="E-mail*">
 							</div>
 						</div>
 						<div class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="password" class="input-field__input" placeholder="Пароль*">
+								<input type="password" id="register-contract-ending-password" class="input-field__input" placeholder="Пароль*">
 								<button class="input-field__visibility">
 									<svg class="input-field__visibility-icon input-field__visibility-icon--default">
 										<use xlink:href="img/sprite.svg#icon-eye-off"></use>
@@ -1333,7 +1345,7 @@
 						</div>
 						<div class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="password" class="input-field__input" placeholder="Повторите пароль*">
+								<input type="password" id="register-contract-ending-password-repeat" class="input-field__input" placeholder="Повторите пароль*">
 								<button class="input-field__visibility">
 									<svg class="input-field__visibility-icon input-field__visibility-icon--default">
 										<use xlink:href="img/sprite.svg#icon-eye-off"></use>
@@ -1442,7 +1454,7 @@
 							</div>
 						</div>
 						<div class="default-select modal-form__input">
-							<select class="js-select">
+							<select class="js-select" id="modal-add-review-region">
 								<option data-placeholder="true">Регион</option>
 								<option value="0">Карачаево-Черкесская Республика</option>
 								<option value="1">Москва</option>
@@ -1464,7 +1476,13 @@
 						</div>
 						<span class="form-error">Неверный логин или номер телефона</span>
 						<button class="modal-form__btn btn">Отправить</button>
-						<p class="modal-form__help"><b>Я согласен с</b> <a href="#">политикой конфиденциальности</a></p>
+						<div class="square-checkbox modal-form__checkbox">
+							<input type="checkbox" class="square-checkbox__input" id="modal-add-review-policy" required>
+							<label for="modal-add-review-policy" class="square-checkbox__group">
+								<span class="square-checkbox__icon"></span>
+								<span class="square-checkbox__title">Я согласен с <a href="#">политикой конфиденциальности</a></span>
+							</label>
+						</div>
 					</form>
 				</div>
 			</div>
