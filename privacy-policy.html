@@ -1275,16 +1275,32 @@
 								</div>
 							</div>
 						</div>
-						<div class="default-select modal-form__input">
-							<select class="js-select" id="modal-add-review-region">
-								<option data-placeholder="true">Регион</option>
-								<option value="0">Карачаево-Черкесская Республика</option>
-								<option value="1">Москва</option>
-								<option value="2">Санкт-Петербург</option>
-								<option value="3">Екатеринбург</option>
-								<option value="4">Краснодар</option>
-								<option value="5">Пермь</option>
-							</select>
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<input type="text" id="modal-all-reviews-region" class="input-field__input input-field__input--dropdown" placeholder="Регион">
+								<div class="input-field__dropdown">
+									<ul class="input-field__list">
+										<li class="input-field__list-item">
+											<button class="input-field__value">Карачаево-Черкесская Республика</button>
+										</li>
+										<li class="input-field__list-item">
+											<button class="input-field__value">Москва</button>
+										</li>
+										<li class="input-field__list-item">
+											<button class="input-field__value">Санкт-Петербург</button>
+										</li>
+										<li class="input-field__list-item">
+											<button class="input-field__value">Екатеринбург</button>
+										</li>
+										<li class="input-field__list-item">
+											<button class="input-field__value">Краснодар</button>
+										</li>
+										<li class="input-field__list-item">
+											<button class="input-field__value">Пермь</button>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 						<div class="input-field modal-form__input">
 							<div class="input-field__inner">
@@ -1306,6 +1322,54 @@
 							</label>
 						</div>
 					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-expenses">
+		<div class="modal__wrap modal__wrap--md">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="modal__top">
+					<h2 class="modal__heading">Дополнительные расходы помимо базовой стоимости тарифа</h2>
+				</div>
+				<div class="modal__content content content--sm">
+					<table>
+						<tbody>
+							<tr>
+								<td>За каждого кредитора (сверх тарифного плана)</td>
+								<td style="text-align: right;">350 ₽</td>
+							</tr>
+							<tr>
+								<td>За каждого кредитора (не банк или не МФО)</td>
+								<td style="text-align: right;">1 000 ₽</td>
+							</tr>
+							<tr>
+								<td>За каждого дебитора (тот, кто должен Вам)</td>
+								<td style="text-align: right;">2 000 ₽</td>
+							</tr>
+							<tr>
+								<td>За каждое юр. лицо, где Вы в составе учредителей</td>
+								<td style="text-align: right;">от 3 000 ₽</td>
+							</tr>
+							<tr>
+								<td>При наличии официального дохода (з/п, пенсия, пособия)</td>
+								<td style="text-align: right;">от 3 000 ₽</td>
+							</tr>
+							<tr>
+								<td>За каждую ед. имущества, подлежащую реализации на эл.торгах</td>
+								<td style="text-align: right;">от 3 000 ₽</td>
+							</tr>
+							<tr>
+								<td>За каждую сделку по отчуждению имущества в пределах 3-х лет до заключения договора</td>
+								<td style="text-align: right;">от 3 000 ₽</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>
