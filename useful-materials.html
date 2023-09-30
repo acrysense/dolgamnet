@@ -724,6 +724,59 @@
 			</div>
 		</div>
 	</div>
+	<div class="modal" id="modal-consultation-questions">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="modal__top">
+					<h2 class="modal__heading">Задать вопрос онлайн консультанту</h2>
+					<p class="modal__description">Если вы не нашли интересующую вас информацию, то задайте вопрос нашему онлайн-консультанту. Ответ на ваш вопрос отобразиться на сайте, и вам придет уведомление на указанную электронную почту</p>
+				</div>
+				<div class="modal__content">
+					<form action="#" class="modal-form modal__form">
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<input type="text" id="modal-consultation-questions-name" class="input-field__input" placeholder="Фамилия и имя*">
+							</div>
+						</div>
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<input type="email" id="modal-consultation-questions-email" class="input-field__input" placeholder="E-mail*">
+							</div>
+						</div>
+						<div class="default-select modal-form__input">
+							<select class="js-select">
+								<option value="0" data-placeholder="true">Тема обращения</option>
+								<option value="1">Тема обращения 1</option>
+								<option value="2">Тема обращения 2</option>
+								<option value="3">Тема обращения 3</option>
+								<option value="4">Тема обращения 4</option>
+								<option value="5">Тема обращения 5</option>
+							</select>
+						</div>
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<textarea id="modal-consultation-questions-text" class="input-field__textarea" placeholder="Текст вопроса"></textarea>
+							</div>
+						</div>
+						<span class="form-error">Неверное имя, номер телефона или e-mail</span>
+						<button class="modal-form__btn btn">Записаться на консультацию</button>
+						<div class="square-checkbox modal-form__checkbox">
+							<input type="checkbox" class="square-checkbox__input" id="modal-consultation-questions-policy" required>
+							<label for="modal-consultation-questions-policy" class="square-checkbox__group">
+								<span class="square-checkbox__icon"></span>
+								<span class="square-checkbox__title">Я согласен с <a href="#">политикой конфиденциальности</a></span>
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="modal" id="modal-auth">
 		<div class="modal__wrap">
 			<div class="modal__wrapper">
@@ -773,7 +826,6 @@
 						</div>
 						<div class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="password" id="login-password" class="input-field__input" placeholder="Введите пароль">
 								<button class="input-field__visibility">
 									<svg class="input-field__visibility-icon input-field__visibility-icon--default">
 										<use xlink:href="img/sprite.svg#icon-eye-off"></use>
@@ -782,6 +834,7 @@
 										<use xlink:href="img/sprite.svg#icon-eye"></use>
 									</svg>
 								</button>
+								<input type="password" id="login-password" class="input-field__input" placeholder="Введите пароль">
 							</div>
 						</div>
 						<span class="form-error">Неверный логин или пароль</span>
@@ -1044,7 +1097,6 @@
 					<form action="#" class="modal-form modal__form">
 						<div class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="password" id="register-ending-password" class="input-field__input" placeholder="Пароль*">
 								<button class="input-field__visibility">
 									<svg class="input-field__visibility-icon input-field__visibility-icon--default">
 										<use xlink:href="img/sprite.svg#icon-eye-off"></use>
@@ -1053,11 +1105,11 @@
 										<use xlink:href="img/sprite.svg#icon-eye"></use>
 									</svg>
 								</button>
+								<input type="password" id="register-ending-password" class="input-field__input" placeholder="Пароль*">
 							</div>
 						</div>
 						<div class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="password" id="register-ending-password-repeat" class="input-field__input" placeholder="Повторите пароль*">
 								<button class="input-field__visibility">
 									<svg class="input-field__visibility-icon input-field__visibility-icon--default">
 										<use xlink:href="img/sprite.svg#icon-eye-off"></use>
@@ -1066,6 +1118,7 @@
 										<use xlink:href="img/sprite.svg#icon-eye"></use>
 									</svg>
 								</button>
+								<input type="password" id="register-ending-password-repeat" class="input-field__input" placeholder="Повторите пароль*">
 							</div>
 						</div>
 						<span class="form-error">Неверный пароль</span>
@@ -1169,7 +1222,6 @@
 						</div>
 						<div class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="password" id="register-contract-ending-password" class="input-field__input" placeholder="Пароль*">
 								<button class="input-field__visibility">
 									<svg class="input-field__visibility-icon input-field__visibility-icon--default">
 										<use xlink:href="img/sprite.svg#icon-eye-off"></use>
@@ -1178,11 +1230,11 @@
 										<use xlink:href="img/sprite.svg#icon-eye"></use>
 									</svg>
 								</button>
+								<input type="password" id="register-contract-ending-password" class="input-field__input" placeholder="Пароль*">
 							</div>
 						</div>
 						<div class="input-field modal-form__input">
 							<div class="input-field__inner">
-								<input type="password" id="register-contract-ending-password-repeat" class="input-field__input" placeholder="Повторите пароль*">
 								<button class="input-field__visibility">
 									<svg class="input-field__visibility-icon input-field__visibility-icon--default">
 										<use xlink:href="img/sprite.svg#icon-eye-off"></use>
@@ -1191,6 +1243,7 @@
 										<use xlink:href="img/sprite.svg#icon-eye"></use>
 									</svg>
 								</button>
+								<input type="password" id="register-contract-ending-password-repeat" class="input-field__input" placeholder="Повторите пароль*">
 							</div>
 						</div>
 						<span class="form-error">Неверные данные</span>
