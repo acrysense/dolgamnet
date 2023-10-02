@@ -78,6 +78,8 @@
 							<a href="index.html" class="header__logotype">
 								<img src="img/logotype.svg" width="190" height="40" alt="ДОЛГАМ.НЕТ">
 							</a>
+						</div>
+						<div class="header__nav-wrap">
 							<div class="c-search header__search">
 								<form action="#" class="c-search__wrapper">
 									<button class="c-search__trigger">
@@ -85,31 +87,44 @@
 											<use xlink:href="img/sprite.svg#icon-search"></use>
 										</svg>
 									</button>
+									<div class="c-search__dropdown">
+										<button class="c-search__btn">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-search"></use>
+											</svg>
+										</button>
+										<input type="text" class="c-search__input" placeholder="Поиск по сайту">
+										<button class="c-search__close">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-close"></use>
+											</svg>
+										</button>
+									</div>
 								</form>
 							</div>
+							<nav class="nav header__nav">
+								<ul class="nav__list">
+									<li class="nav__item">
+										<a href="#" class="nav__link">Услуги</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link">Инструменты должника</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link">Онлайн консультация</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link">О компании</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link">Вопрос-ответ</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link">Контакты</a>
+									</li>
+								</ul>
+							</nav>
 						</div>
-						<nav class="nav header__nav">
-							<ul class="nav__list">
-								<li class="nav__item">
-									<a href="#" class="nav__link">Услуги</a>
-								</li>
-								<li class="nav__item">
-									<a href="#" class="nav__link">Инструменты должника</a>
-								</li>
-								<li class="nav__item">
-									<a href="#" class="nav__link">Онлайн консультация</a>
-								</li>
-								<li class="nav__item">
-									<a href="#" class="nav__link">О компании</a>
-								</li>
-								<li class="nav__item">
-									<a href="#" class="nav__link">Вопрос-ответ</a>
-								</li>
-								<li class="nav__item">
-									<a href="#" class="nav__link">Контакты</a>
-								</li>
-							</ul>
-						</nav>
 						<div class="header__group">
 							<a href="#" class="header__btn btn modal-btn" data-id="modal-auth">
 								<svg>
@@ -457,8 +472,11 @@
 						<div class="menu__sections">
 							<div class="menu__section">
 								<button class="menu__trigger">
+									<svg class="prev">
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
 									<span>Услуги</span>
-									<svg>
+									<svg class="next">
 										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
 									</svg>
 								</button>
@@ -508,8 +526,11 @@
 							</div>
 							<div class="menu__section">
 								<button class="menu__trigger">
+									<svg class="prev">
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
 									<span>Инструменты должника</span>
-									<svg>
+									<svg class="next">
 										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
 									</svg>
 								</button>
@@ -541,8 +562,11 @@
 							</div>
 							<div class="menu__section">
 								<button class="menu__trigger">
+									<svg class="prev">
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
 									<span>Полезные материалы по банкротству</span>
-									<svg>
+									<svg class="next">
 										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
 									</svg>
 								</button>
@@ -592,8 +616,11 @@
 							</div>
 							<div class="menu__section">
 								<button class="menu__trigger">
+									<svg class="prev">
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
 									<span>О компании</span>
-									<svg>
+									<svg class="next">
 										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
 									</svg>
 								</button>
@@ -665,7 +692,7 @@
 						</div>
 					</div>
 					<div class="menu__block">
-						<ul class="menu__list">
+						<ul class="menu__list menu__list--additional">
 							<li class="menu__item">
 								<a href="#" class="menu__link">Онлайн консультация</a>
 							</li>
