@@ -88,17 +88,19 @@
 										</svg>
 									</button>
 									<div class="c-search__dropdown">
-										<button class="c-search__btn">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-search"></use>
-											</svg>
-										</button>
-										<input type="text" class="c-search__input" placeholder="Поиск по сайту">
-										<button class="c-search__close">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-close"></use>
-											</svg>
-										</button>
+										<div class="c-search__inner">
+											<button class="c-search__btn">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-search"></use>
+												</svg>
+											</button>
+											<input type="text" class="c-search__input" placeholder="Поиск по сайту">
+											<button class="c-search__close">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-close"></use>
+												</svg>
+											</button>
+										</div>
 									</div>
 								</form>
 							</div>
@@ -919,7 +921,7 @@
 				</a>
 			</li>
 			<li class="mobile-nav__item">
-				<a href="#" class="mobile-nav__link">
+				<a href="#" class="mobile-nav__link search-btn">
 					<svg>
 						<use xlink:href="img/sprite.svg#icon-search"></use>
 					</svg>
@@ -1901,7 +1903,7 @@
 	</div>
 	<!-- end of modals -->
 	<!-- popups -->
-	<div class="popups is--active" id="popups-text">
+	<div class="popups" id="popup-text">
 		<div class="popups__wrap">
 			<div class="popups__wrapper">
 				<button class="popups__close-btn popups__close">
