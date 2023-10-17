@@ -194,6 +194,12 @@
 					<div class="content-section__wrapper">
 						<div class="content-section__left">
 							<div class="content-section__content content">
+								<a href="cases-won.html" class="content-back">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
+									<span>Выигранные дела</span>
+								</a>
 								<h2>Дело № 45-243241/2019</h2>
 								<hr>
 								<a href="#" class="content-link-icon">
@@ -218,12 +224,14 @@
 									Россельхозбанк, ВТБ Банк, Сбербанк и
 									<b><a href="#">еще 10</a></b>
 								</p>
-								<a href="#" class="btn btn--grey">
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-info-circle"></use>
-									</svg>
-									<span>Среди кредиторов есть физические лица</span>
-								</a>
+								<div class="sm-grey-block small">
+									<p>
+										<button class="tippy-trigger tippy-trigger--sm" data-id="tippy-tooltip"><svg>
+												<use xlink:href="img/sprite.svg#icon-info-circle"></use>
+											</svg></button>
+										Среди кредиторов есть физические лица
+									</p>
+								</div>
 								<hr>
 								<h3>Сумма долга: 5 622 951, 94 ₽</h3>
 								<h3>Описание</h3>
@@ -927,6 +935,12 @@
 		</ul>
 	</nav>
 	<!-- end of mobile nav -->
+	<!-- tippy -->
+	<div class="tippy" id="tippy-tooltip">
+		<p>Поясняющий текст. Лишь многие известные личности лишь добавляют фракционных разногласий.</p>
+		<a href="#">Подробнее</a>
+	</div>
+	<!-- end of tippy -->
 	<!-- modals -->
 	<div class="modal" id="modal-city-selection">
 		<div class="modal__wrap">

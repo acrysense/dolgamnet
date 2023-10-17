@@ -258,8 +258,17 @@
 					</nav>
 					<div class="affairs__wrap section-indent-top">
 						<div class="affairs__left">
-							<div class="affairs-filter affairs__filter">
+							<div class="affairs-filter affairs__filter" id="affairs-filter">
 								<div class="affairs-filter__wrap">
+									<div class="affairs-filter__top">
+										<button class="affairs-filter__close affairs-filter__close-btn">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-prev-bold"></use>
+											</svg>
+											<span>Фильтры</span>
+										</button>
+										<a href="#" class="affairs-filter__reset">Сбросить</a>
+									</div>
 									<div class="affairs-filter__block">
 										<h3 class="affairs-filter__subtitle">Регион</h3>
 										<div class="input-field affairs-filter__select">
@@ -465,7 +474,7 @@
 									</div>
 									<div class="affairs-filter__bottom">
 										<button class="affairs-filter__btn btn">Показать (12 дел)</button>
-										<button class="affairs-filter__btn btn btn--border">Сбросить</button>
+										<button class="affairs-filter__btn affairs-filter__btn--reset btn btn--border">Сбросить</button>
 									</div>
 								</div>
 							</div>
@@ -473,6 +482,19 @@
 						<div class="affairs__right">
 							<div class="affairs__top">
 								<h3 class="affairs__subtitle">Выигранных дел: 2 856</h3>
+								<button class="affairs__control" id="affairs-sort-trigger">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-sort"></use>
+									</svg>
+									<span>Сортировка</span>
+								</button>
+								<button class="affairs__control" id="affairs-filter-trigger">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-settings"></use>
+									</svg>
+									<span>Фильтры</span>
+									<span class="value">3</span>
+								</button>
 							</div>
 							<div class="affairs__wrapper">
 								<div class="case-card affairs__item">
