@@ -482,12 +482,17 @@
 						<div class="affairs__right">
 							<div class="affairs__top">
 								<h3 class="affairs__subtitle">Выигранных дел: 2 856</h3>
-								<button class="affairs__control" id="affairs-sort-trigger">
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-sort"></use>
-									</svg>
-									<span>Сортировка</span>
-								</button>
+								<div class="sort-select affairs__sort-select">
+									<select class="js-select">
+										<option data-placeholder="true">Сортировка</option>
+										<option value="0">По рейтингу (убыванию)</option>
+										<option value="0">По рейтингу (возрастанию)</option>
+										<option value="1">По дате (убыванию)</option>
+										<option value="1">По дате (возрастанию)</option>
+										<option value="2">По количеству (убыванию)</option>
+										<option value="2">По количеству (возрастанию)</option>
+									</select>
+								</div>
 								<button class="affairs__control" id="affairs-filter-trigger">
 									<svg>
 										<use xlink:href="img/sprite.svg#icon-settings"></use>
@@ -1636,6 +1641,64 @@
 							<button class="auth-buttons__btn btn modal-btn" data-id="modal-register">Зарегистрироваться</button>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-change-password">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="modal__top">
+					<h2 class="modal__heading">Изменение пароля</h2>
+				</div>
+				<div class="modal__content">
+					<form action="#" class="modal-form modal__form">
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<input type="password" id="change-password-pass" class="input-field__input" placeholder="Введите старый пароль">
+							</div>
+						</div>
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<button class="input-field__visibility">
+									<svg class="input-field__visibility-icon input-field__visibility-icon--default">
+										<use xlink:href="img/sprite.svg#icon-eye-off"></use>
+									</svg>
+									<svg class="input-field__visibility-icon input-field__visibility-icon--active">
+										<use xlink:href="img/sprite.svg#icon-eye"></use>
+									</svg>
+								</button>
+								<input type="password" id="change-password-pass-new" class="input-field__input" placeholder="Введите новый пароль">
+							</div>
+						</div>
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<button class="input-field__visibility">
+									<svg class="input-field__visibility-icon input-field__visibility-icon--default">
+										<use xlink:href="img/sprite.svg#icon-eye-off"></use>
+									</svg>
+									<svg class="input-field__visibility-icon input-field__visibility-icon--active">
+										<use xlink:href="img/sprite.svg#icon-eye"></use>
+									</svg>
+								</button>
+								<input type="password" id="change-password-pass-new-confirm" class="input-field__input" placeholder="Повторите пароль">
+							</div>
+						</div>
+						<span class="form-error">Неверный пароль</span>
+						<button class="modal-form__btn btn">Сохранить изменения</button>
+						<div class="square-checkbox modal-form__checkbox">
+							<input type="checkbox" class="square-checkbox__input" id="modal-change-password-policy" required>
+							<label for="modal-change-password-policy" class="square-checkbox__group">
+								<span class="square-checkbox__icon"></span>
+								<span class="square-checkbox__title">Я согласен с <a href="#">политикой конфиденциальности</a></span>
+							</label>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>

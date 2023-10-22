@@ -397,16 +397,71 @@
 								</li>
 							</ul>
 						</div>
-					</div>
-					<!-- loader -->
-					<div class="loader">
-						<div class="loading-spinner">
-							<svg class="loading-spinner__circle-svg" viewBox="25 25 50 50">
-								<circle class="loading-spinner__circle-stroke" cx="50" cy="50" r="20" fill="none" stroke="#5DA26C" stroke-width="5" stroke-miterlimit="10" />
-							</svg>
+						<div class="sitemap__block">
+							<h3 class="sitemap__heading">Мой профиль</h3>
+							<ul class="sitemap__list">
+								<li class="sitemap__item">
+									<a href="lk.html" class="sitemap__link" target="_blank">Мой профиль</a>
+								</li>
+							</ul>
+						</div>
+						<div class="sitemap__block">
+							<h3 class="sitemap__heading">3.2 Личные данные</h3>
+							<ul class="sitemap__list">
+								<li class="sitemap__item">
+									<a href="lk-data.html" class="sitemap__link" target="_blank">Личные данные (Базовая информация)</a>
+								</li>
+								<li class="sitemap__item">
+									<a href="lk-data-family.html" class="sitemap__link" target="_blank">Личные данные (Семья)</a>
+								</li>
+								<li class="sitemap__item">
+									<a href="lk-data-property.html" class="sitemap__link" target="_blank">Личные данные (Имущество)</a>
+								</li>
+								<li class="sitemap__item">
+									<a href="lk-data-income.html" class="sitemap__link" target="_blank">Личные данные (Доходы)</a>
+								</li>
+								<li class="sitemap__item">
+									<a href="lk-data-business.html" class="sitemap__link" target="_blank">Личные данные (Бизнес)</a>
+								</li>
+							</ul>
+						</div>
+						<div class="sitemap__block">
+							<h3 class="sitemap__heading">3.3 Задолженности</h3>
+							<ul class="sitemap__list">
+								<li class="sitemap__item">
+									<a href="lk-debt.html" class="sitemap__link" target="_blank">Задолженности (Кредиторы)</a>
+								</li>
+								<li class="sitemap__item">
+									<a href="lk-debt-debtors.html" class="sitemap__link" target="_blank">Задолженности (Дебиторы)</a>
+								</li>
+								<li class="sitemap__item">
+									<a href="lk-debt-legal-debts.html" class="sitemap__link" target="_blank">Задолженности (Судебные задолженности)</a>
+								</li>
+							</ul>
+						</div>
+						<div class="sitemap__block">
+							<h3 class="sitemap__heading">3.9 Вопрос-ответ</h3>
+							<ul class="sitemap__list">
+								<li class="sitemap__item">
+									<a href="lk-question-answer.html" class="sitemap__link" target="_blank">Вопрос-ответ</a>
+								</li>
+								<li class="sitemap__item">
+									<a href="lk-question-answer-inner.html" class="sitemap__link" target="_blank">Детальная страница ответа на вопрос</a>
+								</li>
+							</ul>
+						</div>
+						<div class="sitemap__block">
+							<!-- loader -->
+							<div class="loader">
+								<div class="loading-spinner">
+									<svg class="loading-spinner__circle-svg" viewBox="25 25 50 50">
+										<circle class="loading-spinner__circle-stroke" cx="50" cy="50" r="20" fill="none" stroke="#5DA26C" stroke-width="5" stroke-miterlimit="10" />
+									</svg>
+								</div>
+							</div>
+							<!-- end of loader -->
 						</div>
 					</div>
-					<!-- end of loader -->
 				</div>
 			</section>
 			<!-- end of sitemap -->
@@ -1311,6 +1366,64 @@
 							<button class="auth-buttons__btn btn modal-btn" data-id="modal-register">Зарегистрироваться</button>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-change-password">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="modal__top">
+					<h2 class="modal__heading">Изменение пароля</h2>
+				</div>
+				<div class="modal__content">
+					<form action="#" class="modal-form modal__form">
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<input type="password" id="change-password-pass" class="input-field__input" placeholder="Введите старый пароль">
+							</div>
+						</div>
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<button class="input-field__visibility">
+									<svg class="input-field__visibility-icon input-field__visibility-icon--default">
+										<use xlink:href="img/sprite.svg#icon-eye-off"></use>
+									</svg>
+									<svg class="input-field__visibility-icon input-field__visibility-icon--active">
+										<use xlink:href="img/sprite.svg#icon-eye"></use>
+									</svg>
+								</button>
+								<input type="password" id="change-password-pass-new" class="input-field__input" placeholder="Введите новый пароль">
+							</div>
+						</div>
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<button class="input-field__visibility">
+									<svg class="input-field__visibility-icon input-field__visibility-icon--default">
+										<use xlink:href="img/sprite.svg#icon-eye-off"></use>
+									</svg>
+									<svg class="input-field__visibility-icon input-field__visibility-icon--active">
+										<use xlink:href="img/sprite.svg#icon-eye"></use>
+									</svg>
+								</button>
+								<input type="password" id="change-password-pass-new-confirm" class="input-field__input" placeholder="Повторите пароль">
+							</div>
+						</div>
+						<span class="form-error">Неверный пароль</span>
+						<button class="modal-form__btn btn">Сохранить изменения</button>
+						<div class="square-checkbox modal-form__checkbox">
+							<input type="checkbox" class="square-checkbox__input" id="modal-change-password-policy" required>
+							<label for="modal-change-password-policy" class="square-checkbox__group">
+								<span class="square-checkbox__icon"></span>
+								<span class="square-checkbox__title">Я согласен с <a href="#">политикой конфиденциальности</a></span>
+							</label>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
