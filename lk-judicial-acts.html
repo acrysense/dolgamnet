@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ДОЛГАМ.НЕТ - Задолженности</title>
-	<meta property="og:title" content="ДОЛГАМ.НЕТ - Задолженности">
+	<title>ДОЛГАМ.НЕТ - Информация о ходе дела</title>
+	<meta property="og:title" content="ДОЛГАМ.НЕТ - Информация о ходе дела">
 	<meta property="og:description" content="Описание">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="ДОЛГАМ.НЕТ - Задолженности">
+	<meta property="og:site_name" content="ДОЛГАМ.НЕТ - Информация о ходе дела">
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -185,18 +185,21 @@
 							</ol>
 						</div>
 						<div class="section-heading">
-							<h1 class="section-heading__title">Задолженности</h1>
+							<h1 class="section-heading__title">Информация о ходе дела</h1>
 						</div>
 						<nav class="section-nav">
 							<ul class="section-nav__list">
 								<li class="section-nav__item">
-									<a href="lk-debt.html" class="section-nav__link">Кредиторы</a>
+									<a href="lk-basic-info.html" class="section-nav__link">Основная информация</a>
 								</li>
 								<li class="section-nav__item is--active">
-									<a href="lk-debt-debtors.html" class="section-nav__link">Дебиторы</a>
+									<a href="lk-judicial-acts.html" class="section-nav__link">Судебные акты</a>
 								</li>
 								<li class="section-nav__item">
-									<a href="lk-debt-legal-debts.html" class="section-nav__link">Судебные задолженности</a>
+									<a href="lk-calendar-court-hearings.html" class="section-nav__link">Календарь судебных заседаний</a>
+								</li>
+								<li class="section-nav__item">
+									<a href="lk-credit-registry.html" class="section-nav__link">Реестр кредитов</a>
 								</li>
 							</ul>
 						</nav>
@@ -204,54 +207,68 @@
 				</div>
 			</section>
 			<!-- end of section top -->
-			<!-- lk data -->
-			<div class="lk-data section-indent-top" id="lk-data">
+			<!-- lk links -->
+			<div class="lk-links section-indent-top" id="lk-links">
 				<div class="container">
-					<div class="lk-data__wrap">
-						<div class="lk-data__column">
-							<div class="lk-data__block">
-								<h3 class="lk-data__heading">Физические лица</h3>
-								<div class="lk-data__main">
-									<div class="lk-data__items lk-data__items--wide">
-										<div class="lk-data__item">
-											<span class="lk-data__help">Дебитор</span>
-											<span class="lk-data__value">Логинов А.В</span>
-											<span class="lk-data__value">Сизова М.Д.</span>
-											<span class="lk-data__value">Кукин Л.Д.</span>
-											<span class="lk-data__value">Тиняев Д.Б.</span>
-										</div>
-										<div class="lk-data__item">
-											<span class="lk-data__help">Статус</span>
-											<span class="lk-data__value">Активный</span>
-											<span class="lk-data__value">Закрыт</span>
-											<span class="lk-data__value">Закрыт</span>
-											<span class="lk-data__value">Закрыт</span>
-										</div>
-										<div class="lk-data__item">
-											<span class="lk-data__help">Сумма</span>
-											<span class="lk-data__value">570 000 ₽</span>
-											<span class="lk-data__value">236 000 ₽</span>
-											<span class="lk-data__value">75 000 ₽</span>
-											<span class="lk-data__value">95 000 ₽</span>
-										</div>
-									</div>
-								</div>
+					<div class="lk-links__wrapper">
+						<div class="lk-links__item">
+							<a href="#" class="lk-links__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-document"></use>
+								</svg>
+								<span>Заключение мирового соглашения в деле основного должника. pdf</span>
+							</a>
+							<div class="lk-links__inner">
+								<span class="lk-links__elem">
+									<span>Дата:</span>
+									<b>01.05.2021 г.</b>
+								</span>
+								<span class="lk-links__elem">
+									<span>Судья:</span>
+									<b>Петренко И.В.</b>
+								</span>
 							</div>
 						</div>
-					</div>
-					<div class="lk-notice">
-						<div class="lk-notice__wrapper">
-							<svg class="lk-notice__icon">
-								<use xlink:href="img/sprite.svg#icon-info-circle"></use>
-							</svg>
-							<div class="lk-notice__body">
-								<p class="lk-notice__description">Если указанная на странице информация не соответсвует действительности, свяжитесь с нами по номеру телефона <a href="tel:88008200096">8 (800) 820 00 96</a></p>
+						<div class="lk-links__item">
+							<a href="#" class="lk-links__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-document"></use>
+								</svg>
+								<span>Федеральный закон N 230-ФЗ «О защите прав и законных интересов физических лиц при осуществлении деятельности по возврату просроченной задолженности от 03.07.2016</span>
+							</a>
+							<div class="lk-links__inner">
+								<span class="lk-links__elem">
+									<span>Дата:</span>
+									<b>01.05.2021 г.</b>
+								</span>
+								<span class="lk-links__elem">
+									<span>Судья:</span>
+									<b>Петренко И.В.</b>
+								</span>
+							</div>
+						</div>
+						<div class="lk-links__item">
+							<a href="#" class="lk-links__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-document"></use>
+								</svg>
+								<span>Заключение мирового соглашения в деле основного должника. pdf</span>
+							</a>
+							<div class="lk-links__inner">
+								<span class="lk-links__elem">
+									<span>Дата:</span>
+									<b>01.05.2021 г.</b>
+								</span>
+								<span class="lk-links__elem">
+									<span>Судья:</span>
+									<b>Петренко И.В.</b>
+								</span>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- end of lk data -->
+			<!-- end of lk links -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->

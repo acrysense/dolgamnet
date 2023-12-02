@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ДОЛГАМ.НЕТ - Задолженности</title>
-	<meta property="og:title" content="ДОЛГАМ.НЕТ - Задолженности">
+	<title>ДОЛГАМ.НЕТ - Информация о ходе дела</title>
+	<meta property="og:title" content="ДОЛГАМ.НЕТ - Информация о ходе дела">
 	<meta property="og:description" content="Описание">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="ДОЛГАМ.НЕТ - Задолженности">
+	<meta property="og:site_name" content="ДОЛГАМ.НЕТ - Информация о ходе дела">
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -185,18 +185,21 @@
 							</ol>
 						</div>
 						<div class="section-heading">
-							<h1 class="section-heading__title">Задолженности</h1>
+							<h1 class="section-heading__title">Информация о ходе дела</h1>
 						</div>
 						<nav class="section-nav">
 							<ul class="section-nav__list">
 								<li class="section-nav__item">
-									<a href="lk-debt.html" class="section-nav__link">Кредиторы</a>
-								</li>
-								<li class="section-nav__item is--active">
-									<a href="lk-debt-debtors.html" class="section-nav__link">Дебиторы</a>
+									<a href="lk-basic-info.html" class="section-nav__link">Основная информация</a>
 								</li>
 								<li class="section-nav__item">
-									<a href="lk-debt-legal-debts.html" class="section-nav__link">Судебные задолженности</a>
+									<a href="lk-judicial-acts.html" class="section-nav__link">Судебные акты</a>
+								</li>
+								<li class="section-nav__item">
+									<a href="lk-calendar-court-hearings.html" class="section-nav__link">Календарь судебных заседаний</a>
+								</li>
+								<li class="section-nav__item is--active">
+									<a href="lk-credit-registry.html" class="section-nav__link">Реестр кредитов</a>
 								</li>
 							</ul>
 						</nav>
@@ -204,54 +207,126 @@
 				</div>
 			</section>
 			<!-- end of section top -->
-			<!-- lk data -->
-			<div class="lk-data section-indent-top" id="lk-data">
+			<!-- content section -->
+			<section class="content-section section-indent-top" id="content-section">
 				<div class="container">
-					<div class="lk-data__wrap">
-						<div class="lk-data__column">
-							<div class="lk-data__block">
-								<h3 class="lk-data__heading">Физические лица</h3>
-								<div class="lk-data__main">
-									<div class="lk-data__items lk-data__items--wide">
-										<div class="lk-data__item">
-											<span class="lk-data__help">Дебитор</span>
-											<span class="lk-data__value">Логинов А.В</span>
-											<span class="lk-data__value">Сизова М.Д.</span>
-											<span class="lk-data__value">Кукин Л.Д.</span>
-											<span class="lk-data__value">Тиняев Д.Б.</span>
-										</div>
-										<div class="lk-data__item">
-											<span class="lk-data__help">Статус</span>
-											<span class="lk-data__value">Активный</span>
-											<span class="lk-data__value">Закрыт</span>
-											<span class="lk-data__value">Закрыт</span>
-											<span class="lk-data__value">Закрыт</span>
-										</div>
-										<div class="lk-data__item">
-											<span class="lk-data__help">Сумма</span>
-											<span class="lk-data__value">570 000 ₽</span>
-											<span class="lk-data__value">236 000 ₽</span>
-											<span class="lk-data__value">75 000 ₽</span>
-											<span class="lk-data__value">95 000 ₽</span>
-										</div>
+					<div class="content-section__wrapper">
+						<div class="content-section__left">
+							<div class="content-section__content content content--sm">
+								<h1>Реестр кредитов</h1>
+								<p class="grey">Дата закрытия реестра 12.12.2020</p>
+								<p>Если вы не помните, перед какими банками у вас есть задолженность и в каком размере, то это можно проверить, изучив свою кредитную историю. Это документ, содержащий информацию о ваших кредитах и займах, индивидуальный рейтинг (при наличии), а также информацию об источниках формирования кредитной истории и о пользователях, которым выдавались кредитные отчеты.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of content section -->
+			<!-- credit registry -->
+			<div class="credit-registry" id="credit-registry">
+				<div class="container">
+					<div class="credit-registry__top">
+						<div class="sort-select credit-registry__select">
+							<select class="js-select">
+								<option data-placeholder="true">Сортировка</option>
+								<option value="0">По рейтингу (убыванию)</option>
+								<option value="1">По рейтингу (возрастанию)</option>
+								<option value="2">По дате (убыванию)</option>
+								<option value="3">По дате (возрастанию)</option>
+								<option value="4">По количеству (убыванию)</option>
+								<option value="5">По количеству (возрастанию)</option>
+							</select>
+						</div>
+						<div class="default-select credit-registry__select credit-registry__select--wide">
+							<select class="js-select">
+								<option data-placeholder="true">Очередь в реестре</option>
+								<option value="0">Очередь в реестре</option>
+								<option value="1">Очередь в реестре</option>
+								<option value="2">Очередь в реестре</option>
+							</select>
+						</div>
+					</div>
+					<div class="credit-registry__wrapper">
+						<div class="credit-registry-card credit-registry__item">
+							<div class="credit-registry-card__top">
+								<h3 class="credit-registry-card__title">1. АО «Альфа Банк»</h3>
+								<span class="credit-registry-card__help">Юридическое лицо</span>
+							</div>
+							<div class="credit-registry-card__body">
+								<div class="credit-registry-card__block">
+									<span class="credit-registry-card__help">О кредиторе</span>
+									<div class="credit-registry-card__elems">
+										<span class="credit-registry-card__elem">
+											<b>ИНН:</b>
+											<span>12345956565</span>
+										</span>
+										<span class="credit-registry-card__elem">
+											<b>ОГРН:</b>
+											<span>4545121</span>
+										</span>
+									</div>
+								</div>
+								<div class="credit-registry-card__block">
+									<span class="credit-registry-card__help">Баланс</span>
+									<div class="credit-registry-card__elems">
+										<span class="credit-registry-card__elem">
+											<b>Сумма долга:</b>
+											<span>5 855 000 ₽</span>
+										</span>
+										<span class="credit-registry-card__elem">
+											<b>В реестре:</b>
+											<span>8 555 555 ₽</span>
+										</span>
+										<span class="credit-registry-card__elem">
+											<b>Вне реестра:</b>
+											<span>355 000 ₽</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="credit-registry-card credit-registry__item">
+							<div class="credit-registry-card__top">
+								<h3 class="credit-registry-card__title">2. ПАО «СберБанк»</h3>
+								<span class="credit-registry-card__help">Юридическое лицо</span>
+							</div>
+							<div class="credit-registry-card__body">
+								<div class="credit-registry-card__block">
+									<span class="credit-registry-card__help">О кредиторе</span>
+									<div class="credit-registry-card__elems">
+										<span class="credit-registry-card__elem">
+											<b>ИНН:</b>
+											<span>12345956565</span>
+										</span>
+										<span class="credit-registry-card__elem">
+											<b>ОГРН:</b>
+											<span>4545121</span>
+										</span>
+									</div>
+								</div>
+								<div class="credit-registry-card__block">
+									<span class="credit-registry-card__help">Баланс</span>
+									<div class="credit-registry-card__elems">
+										<span class="credit-registry-card__elem">
+											<b>Сумма долга:</b>
+											<span>5 855 000 ₽</span>
+										</span>
+										<span class="credit-registry-card__elem">
+											<b>В реестре:</b>
+											<span>8 555 555 ₽</span>
+										</span>
+										<span class="credit-registry-card__elem">
+											<b>Вне реестра:</b>
+											<span>355 000 ₽</span>
+										</span>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="lk-notice">
-						<div class="lk-notice__wrapper">
-							<svg class="lk-notice__icon">
-								<use xlink:href="img/sprite.svg#icon-info-circle"></use>
-							</svg>
-							<div class="lk-notice__body">
-								<p class="lk-notice__description">Если указанная на странице информация не соответсвует действительности, свяжитесь с нами по номеру телефона <a href="tel:88008200096">8 (800) 820 00 96</a></p>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
-			<!-- end of lk data -->
+			<!-- end of credit registry -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->

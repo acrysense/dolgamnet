@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ДОЛГАМ.НЕТ - Задолженности</title>
-	<meta property="og:title" content="ДОЛГАМ.НЕТ - Задолженности">
+	<title>ДОЛГАМ.НЕТ - Информация о ходе дела</title>
+	<meta property="og:title" content="ДОЛГАМ.НЕТ - Информация о ходе дела">
 	<meta property="og:description" content="Описание">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="ДОЛГАМ.НЕТ - Задолженности">
+	<meta property="og:site_name" content="ДОЛГАМ.НЕТ - Информация о ходе дела">
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -185,18 +185,21 @@
 							</ol>
 						</div>
 						<div class="section-heading">
-							<h1 class="section-heading__title">Задолженности</h1>
+							<h1 class="section-heading__title">Информация о ходе дела</h1>
 						</div>
 						<nav class="section-nav">
 							<ul class="section-nav__list">
-								<li class="section-nav__item">
-									<a href="lk-debt.html" class="section-nav__link">Кредиторы</a>
-								</li>
 								<li class="section-nav__item is--active">
-									<a href="lk-debt-debtors.html" class="section-nav__link">Дебиторы</a>
+									<a href="lk-basic-info.html" class="section-nav__link">Основная информация</a>
 								</li>
 								<li class="section-nav__item">
-									<a href="lk-debt-legal-debts.html" class="section-nav__link">Судебные задолженности</a>
+									<a href="lk-judicial-acts.html" class="section-nav__link">Судебные акты</a>
+								</li>
+								<li class="section-nav__item">
+									<a href="lk-calendar-court-hearings.html" class="section-nav__link">Календарь судебных заседаний</a>
+								</li>
+								<li class="section-nav__item">
+									<a href="lk-credit-registry.html" class="section-nav__link">Реестр кредитов</a>
 								</li>
 							</ul>
 						</nav>
@@ -207,45 +210,165 @@
 			<!-- lk data -->
 			<div class="lk-data section-indent-top" id="lk-data">
 				<div class="container">
+					<div class="lk-links lk-data__lk-links">
+						<div class="lk-links__wrapper">
+							<div class="lk-links__item">
+								<a href="#" class="lk-links__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-document"></use>
+									</svg>
+									<span>Смотреть дело в системе «Электронное правосудие»</span>
+								</a>
+							</div>
+						</div>
+					</div>
 					<div class="lk-data__wrap">
 						<div class="lk-data__column">
 							<div class="lk-data__block">
-								<h3 class="lk-data__heading">Физические лица</h3>
+								<h3 class="lk-data__heading">Основная информация</h3>
 								<div class="lk-data__main">
-									<div class="lk-data__items lk-data__items--wide">
+									<div class="lk-data__items">
 										<div class="lk-data__item">
-											<span class="lk-data__help">Дебитор</span>
-											<span class="lk-data__value">Логинов А.В</span>
-											<span class="lk-data__value">Сизова М.Д.</span>
-											<span class="lk-data__value">Кукин Л.Д.</span>
-											<span class="lk-data__value">Тиняев Д.Б.</span>
+											<span class="lk-data__help">Дело</span>
+											<span class="lk-data__value">№ 1223120/12-2019 от 22.12.22 г. </span>
 										</div>
+									</div>
+									<div class="lk-data__items">
+										<div class="lk-data__item">
+											<span class="lk-data__help">Регион</span>
+											<span class="lk-data__value">Кемеровская область</span>
+										</div>
+									</div>
+									<div class="lk-data__items">
+										<div class="lk-data__item">
+											<span class="lk-data__help">Вид банкротства</span>
+											<span class="lk-data__value">Семейное банкротство</span>
+										</div>
+									</div>
+									<div class="lk-data__items">
+										<div class="lk-data__item">
+											<span class="lk-data__help">Сумма долга</span>
+											<span class="lk-data__value">147 000 ₽</span>
+										</div>
+									</div>
+									<div class="lk-data__items">
+										<div class="lk-data__item">
+											<span class="lk-data__help">Судья по делу</span>
+											<span class="lk-data__value">Петренко И.В.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="lk-data__column">
+							<div class="lk-data__block">
+								<h3 class="lk-data__heading">Кредиторы</h3>
+								<div class="lk-data__main">
+									<div class="sm-grey-block small">
+										<p>
+											<button class="tippy-trigger tippy-trigger--sm" data-id="tippy-tooltip"><svg>
+													<use xlink:href="img/sprite.svg#icon-info-circle"></use>
+												</svg></button>
+											Среди кредиторов есть физические лица
+										</p>
+									</div>
+									<div class="content lk-data__content">
+										<div class="js-more-list">
+											<p class="small">
+												<b>АльфаБанк, ВТБ Банк, Сбербанк, Россельхозбанк, Почта Банк, Райфаййзенбанк<span class="delimiter"> и</span></b>
+												<b class="hidden-list">Россельхозбанк, ВТБ Банк, Сбербанк, Россельхозбанк, ВТБ Банк, Сбербанк</b>
+												<b><a href="#" class="trigger">Показать полностью</a></b>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lk-data__block">
+								<h3 class="lk-data__heading">Запрет на выезд за границу</h3>
+								<div class="lk-data__main">
+									<div class="lk-data__items">
 										<div class="lk-data__item">
 											<span class="lk-data__help">Статус</span>
-											<span class="lk-data__value">Активный</span>
-											<span class="lk-data__value">Закрыт</span>
-											<span class="lk-data__value">Закрыт</span>
-											<span class="lk-data__value">Закрыт</span>
+											<span class="lk-data__value">Действует с 01. 01. 2020 по 01. 01. 2021</span>
 										</div>
 										<div class="lk-data__item">
-											<span class="lk-data__help">Сумма</span>
-											<span class="lk-data__value">570 000 ₽</span>
-											<span class="lk-data__value">236 000 ₽</span>
-											<span class="lk-data__value">75 000 ₽</span>
-											<span class="lk-data__value">95 000 ₽</span>
+											<span class="lk-data__help">Основание:</span>
+											<span class="lk-data__value">Постановление Замоскворецкого районного суда г. Москва</span>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="lk-notice">
-						<div class="lk-notice__wrapper">
-							<svg class="lk-notice__icon">
-								<use xlink:href="img/sprite.svg#icon-info-circle"></use>
-							</svg>
-							<div class="lk-notice__body">
-								<p class="lk-notice__description">Если указанная на странице информация не соответсвует действительности, свяжитесь с нами по номеру телефона <a href="tel:88008200096">8 (800) 820 00 96</a></p>
+					<div class="lawyers section-indent">
+						<div class="lawyers__wrapper">
+							<h3 class="lawyers__heading lawyers__heading--lg">Юристы сопровождавшие дело</h3>
+							<div class="lawyers__list-flex">
+								<div class="lawyers__item">
+									<picture class="lawyers__img">
+										<img src="img/ava-01.jpg" alt="Image">
+									</picture>
+									<div class="lawyers__body">
+										<h3 class="lawyers__title">Донсков Дмитрий Игоревич</h3>
+										<span class="lawyers__help">Генеральный директор</span>
+										<span class="lawyers__elem">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-email"></use>
+											</svg>
+											<span>info@dolgam.net</span>
+										</span>
+									</div>
+								</div>
+								<div class="lawyers__item">
+									<picture class="lawyers__img">
+										<img src="img/specialists-02.jpg" alt="Image">
+									</picture>
+									<div class="lawyers__body">
+										<h3 class="lawyers__title">Карев Антон Сергеевич</h3>
+										<span class="lawyers__help">Начальник юридического отдела</span>
+										<span class="lawyers__elem">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-email"></use>
+											</svg>
+											<span>info@dolgam.net</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="progress-bankruptcy-case section-indent">
+						<div class="progress-bankruptcy-case__wrapper">
+							<h3 class="progress-bankruptcy-case__heading">Ход дела о банкротстве</h3>
+							<div class="progress-bankruptcy-case__stages">
+								<div class="progress-bankruptcy-case__stages-item is--active">
+									<button class="progress-bankruptcy-case__stage"><span>1</span> этап</button>
+								</div>
+								<div class="progress-bankruptcy-case__stages-item">
+									<button class="progress-bankruptcy-case__stage"><span>2</span> этап</button>
+								</div>
+								<div class="progress-bankruptcy-case__stages-item">
+									<button class="progress-bankruptcy-case__stage"><span>3</span> этап</button>
+								</div>
+								<div class="progress-bankruptcy-case__stages-item">
+									<button class="progress-bankruptcy-case__stage"><span>4</span> этап</button>
+								</div>
+								<div class="progress-bankruptcy-case__stages-item">
+									<button class="progress-bankruptcy-case__stage"><span>5</span> этап</button>
+								</div>
+							</div>
+							<div class="progress-bankruptcy-case__main">
+								<div class="progress-bankruptcy-case__block">
+									<h4 class="progress-bankruptcy-case__title">Текущий этап:</h4>
+									<p class="progress-bankruptcy-case__description">Ходайство о продлении срока реализации имущества</p>
+								</div>
+								<div class="progress-bankruptcy-case__block">
+									<h4 class="progress-bankruptcy-case__title">Примечание:</h4>
+									<p class="progress-bankruptcy-case__description">На данный момент наши специалисты выполняют запрос в банки, микрофинансовые организации и другие ведомства. Подготавливаются документы, необходимые для процедуры банкротства.</p>
+								</div>
+								<div class="progress-bankruptcy-case__block">
+									<a href="#" class="progress-bankruptcy-case__link">Подробее об этапах банкротства</a>
+								</div>
 							</div>
 						</div>
 					</div>
