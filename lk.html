@@ -128,12 +128,115 @@
 							</nav>
 						</div>
 						<div class="header__group">
-							<a href="#" class="header__btn btn modal-btn" data-id="modal-auth">
-								<svg>
-									<use xlink:href="img/sprite.svg#icon-user"></use>
-								</svg>
-								<span>Вход или регистрация</span>
-							</a>
+							<div class="header__btn c-user-dropdown">
+								<a href="#" class="c-user-dropdown__trigger btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-user"></use>
+									</svg>
+									<span>Красильникова А.В.</span>
+								</a>
+								<div class="c-user-dropdown__dropdown">
+									<div class="c-user-dropdown__holder is--active" data-holder="1">
+										<div class="c-user-dropdown__info">
+											<a href="#" class="c-user-dropdown__person">
+												<span>Красильникова <br>Александра Вениаминовна</span>
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+												</svg>
+											</a>
+											<span class="c-user-dropdown__help">Договор № 1542125-12/85</span>
+											<a href="#" class="c-user-dropdown__link c-user-dropdown-change">Сменить пользователя</a>
+										</div>
+										<ul class="c-nav-list c-user-dropdown__list">
+											<li class="c-nav-list__item">
+												<a href="#" class="c-nav-list__link">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-user-filled"></use>
+													</svg>
+													<span>Личные данные</span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="c-nav-list__item">
+												<a href="#" class="c-nav-list__link">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-info-italic"></use>
+													</svg>
+													<span>Информация о банкротстве</span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="c-nav-list__item">
+												<a href="#" class="c-nav-list__link">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-card"></use>
+													</svg>
+													<span>Задолженности</span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="c-nav-list__item">
+												<a href="#" class="c-nav-list__link">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-document"></use>
+													</svg>
+													<span>Информация по договору</span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="c-nav-list__item">
+												<a href="#" class="c-nav-list__link">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-faq"></use>
+													</svg>
+													<span>Вопрос-ответ</span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="c-nav-list__item">
+												<a href="#" class="c-nav-list__link">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-exit"></use>
+													</svg>
+													<span>Выйти</span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="c-user-dropdown__holder" data-holder="2">
+										<a href="#" class="c-user-dropdown__back">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+											</svg>
+											<span>Смена пользователя</span>
+										</a>
+										<div class="c-user-dropdown__accounts">
+											<div class="c-user-dropdown__account">
+												<span class="c-user-dropdown__status">Текущий аккаунт</span>
+												<span class="c-user-dropdown__name">Красильникова <br>Александра Вениаминовна</span>
+												<span class="c-user-dropdown__help">Договор № 1542125-12/85</span>
+											</div>
+											<a href="#" class="c-user-dropdown__account">
+												<span class="c-user-dropdown__name">Красильников <br>Михаил Алексеевич</span>
+												<span class="c-user-dropdown__help">Договор № 1542125-12/85</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
 							<div class="c-socnav header__socnav header__socnav--mobile">
 								<ul class="c-socnav__list">
 									<li class="c-socnav__item">
@@ -1864,6 +1967,33 @@
 							</tr>
 						</tbody>
 					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-change-user">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="modal__top">
+					<h2 class="modal__heading">Смена пользователя</h2>
+				</div>
+				<div class="modal__content">
+					<div class="c-change-user">
+						<div class="c-change-user__account">
+							<span class="c-change-user__status">Текущий аккаунт</span>
+							<span class="c-change-user__name">Красильникова <br>Александра Вениаминовна</span>
+							<span class="c-change-user__help">Договор № 1542125-12/85</span>
+						</div>
+						<a href="#" class="c-change-user__account">
+							<span class="c-change-user__name">Красильников <br>Михаил Алексеевич</span>
+							<span class="c-change-user__help">Договор № 1542125-12/85</span>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
