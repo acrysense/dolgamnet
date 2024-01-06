@@ -232,7 +232,9 @@
 				<div class="container">
 					<form action="#" class="survey__wrap">
 						<div class="survey__wrap-block">
-							<h2 class="survey__heading">Базовая информация</h2>
+							<div class="survey__top">
+								<h2 class="survey__heading">Базовая информация</h2>
+							</div>
 							<div class="survey__form">
 								<div class="survey__block">
 									<h3 class="survey__label">Ваши Фамилия Имя Отчество*</h3>
@@ -263,8 +265,148 @@
 										</div>
 									</div>
 								</div>
+								<div class="survey__block">
+									<h3 class="survey__label">Семейное положение*</h3>
+									<div class="survey__checkboxes">
+										<div class="circle-checkbox survey__checkbox">
+											<input type="radio" class="circle-checkbox__input" id="survey-status-01" name="survey-status">
+											<label for="survey-status-01" class="circle-checkbox__group">
+												<span class="circle-checkbox__icon"></span>
+												<span class="circle-checkbox__title">Холост</span>
+											</label>
+										</div>
+										<div class="circle-checkbox survey__checkbox">
+											<input type="radio" class="circle-checkbox__input" id="survey-status-02" name="survey-status">
+											<label for="survey-status-02" class="circle-checkbox__group">
+												<span class="circle-checkbox__icon"></span>
+												<span class="circle-checkbox__title">В браке</span>
+											</label>
+										</div>
+										<div class="circle-checkbox survey__checkbox">
+											<input type="radio" class="circle-checkbox__input" id="survey-status-03" name="survey-status">
+											<label for="survey-status-03" class="circle-checkbox__group">
+												<span class="circle-checkbox__icon"></span>
+												<span class="circle-checkbox__title">Разведен</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="survey__block">
+									<h3 class="survey__label">Дата рождения*</h3>
+									<div class="survey__inner">
+										<div class="input-field survey__input survey__input--fifty">
+											<div class="input-field__inner">
+												<input type="date" id="survey-data" class="input-field__input" placeholder="01.01.1999">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="survey__block">
+									<h3 class="survey__label">Место рождения*</h3>
+									<div class="survey__inner">
+										<div class="default-select survey__input survey__input--fifty">
+											<select class="js-select">
+												<option value="0" data-placeholder="true">Город</option>
+												<option value="1">Москва</option>
+												<option value="2">Санкт-Петербург</option>
+												<option value="3">Краснодар</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="survey__block">
+									<h3 class="survey__label">Адрес постоянной регистрации*</h3>
+									<div class="survey__inner">
+										<div class="input-field survey__input">
+											<div class="input-field__inner">
+												<input type="text" id="survey-address" class="input-field__input" placeholder="Страна, город, улица, дом, квартира">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="survey__block">
+									<h3 class="survey__label">Адрес фактического проживания*</h3>
+									<div class="survey__inner">
+										<div class="input-field survey__input">
+											<div class="input-field__inner">
+												<input type="text" id="survey-address-current" class="input-field__input" placeholder="Страна, город, улица, дом, квартира">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="survey__block">
+									<h3 class="survey__label">Наличие временной регистрации*</h3>
+									<div class="survey__checkboxes">
+										<div class="circle-checkbox survey__checkbox">
+											<input type="radio" class="circle-checkbox__input" id="survey-reg-01" name="survey-reg">
+											<label for="survey-reg-01" class="circle-checkbox__group">
+												<span class="circle-checkbox__icon"></span>
+												<span class="circle-checkbox__title">Есть</span>
+											</label>
+										</div>
+										<div class="circle-checkbox survey__checkbox">
+											<input type="radio" class="circle-checkbox__input" id="survey-reg-02" name="survey-reg">
+											<label for="survey-reg-02" class="circle-checkbox__group">
+												<span class="circle-checkbox__icon"></span>
+												<span class="circle-checkbox__title">Отсутстсвует</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="survey__block">
+									<h3 class="survey__label">Паспортные данные*</h3>
+									<div class="survey__inner">
+										<div class="input-field survey__input">
+											<div class="input-field__inner">
+												<input type="text" id="survey-pass-series" class="input-field__input" placeholder="Серия">
+											</div>
+										</div>
+										<div class="input-field survey__input">
+											<div class="input-field__inner">
+												<input type="text" id="survey-pass-num" class="input-field__input" placeholder="Номер">
+											</div>
+										</div>
+										<div class="input-field survey__input">
+											<div class="input-field__inner">
+												<input type="text" id="survey-pass-date" class="input-field__input" placeholder="Дата выдачи">
+											</div>
+										</div>
+										<div class="input-field survey__input">
+											<div class="input-field__inner">
+												<input type="text" id="survey-pass-number" class="input-field__input" placeholder="№ подразделения">
+											</div>
+										</div>
+									</div>
+									<div class="survey__inner">
+										<div class="input-field survey__input">
+											<div class="input-field__inner">
+												<input type="text" id="survey-pass-country" class="input-field__input" placeholder="Страна, город, улица, дом, квартира">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="survey__block">
+									<h3 class="survey__label">ИНН</h3>
+									<div class="survey__inner">
+										<div class="input-field survey__input">
+											<div class="input-field__inner">
+												<input type="text" id="survey-inn" class="input-field__input" placeholder="ИНН">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="survey__block">
+									<h3 class="survey__label">Снилс</h3>
+									<div class="survey__inner">
+										<div class="input-field survey__input">
+											<div class="input-field__inner">
+												<input type="text" id="survey-snils" class="input-field__input" placeholder="Снилс">
+											</div>
+										</div>
+									</div>
+								</div>
 								<div class="survey__bottom">
-									<a href="#" class="survey__btn btn btn--border">
+									<a href="#" class="survey__btn survey__btn--back btn btn--border">
 										<svg>
 											<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
 										</svg>
@@ -1900,6 +2042,30 @@
 							<span class="c-change-user__help">Договор № 1542125-12/85</span>
 						</a>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-survey-sending">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="modal__top">
+					<h2 class="modal__heading">Ваша анкета отправлена на проверку</h2>
+					<p class="modal__description">
+						Сотрудники Долгам.НЕТ проверят вашу анкету. Если проверка прошла успешно, то в вашем личном кабинете появится оферта на заключение договора о проведении процедуры банкротства.
+						<br><br>
+						При необходимости мы свяжемся с вами для уточнения деталей. Спасибо, что выбираете Долгам Нет.
+					</p>
+				</div>
+				<div class="modal__content">
+					<form action="#" class="modal-form modal__form">
+						<button class="modal-form__btn btn">Вернуться на главную</button>
+					</form>
 				</div>
 			</div>
 		</div>

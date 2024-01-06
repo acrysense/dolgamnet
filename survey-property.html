@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ДОЛГАМ.НЕТ - Онлайн консультация</title>
-	<meta property="og:title" content="ДОЛГАМ.НЕТ - Онлайн консультация">
+	<title>ДОЛГАМ.НЕТ - Заполнение анкеты</title>
+	<meta property="og:title" content="ДОЛГАМ.НЕТ - Заполнение анкеты">
 	<meta property="og:description" content="Описание">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="ДОЛГАМ.НЕТ - Онлайн консультация">
+	<meta property="og:site_name" content="ДОЛГАМ.НЕТ - Заполнение анкеты">
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -184,146 +184,125 @@
 								</li>
 							</ol>
 						</div>
-						<div class="section-heading">
-							<h2 class="section-heading__title">Онлайн консультация по вопросам долгов и банкротства физических лиц</h2>
-						</div>
-						<div class="info-banner">
-							<div class="info-banner__wrapper info-banner__wrapper--reverse">
-								<picture class="info-banner__img">
-									<img src="img/consultation-experience-img.svg" alt="Image">
-								</picture>
-								<div class="info-banner__body">
-									<h2 class="info-banner__title info-banner__title--sm">Более 15 лет мы помогаем людям обрести финансовую свободу через процедуру банкротства физического лица</h2>
-									<p class="info-banner__description">
-										Мы наработали огромный опыт не только в банкротстве, но и в защите интересов должников при взаимодействии с кредиторами, коллекторами, судебными приставами.
-										<br><br>
-										Если Вы оказались в сложной финансовой ситуации и у Вам нужна профессиональная консультация юристов, то Вы можете получить ее абсолютно бесплатно, задав вопрос на этой странице.
-									</p>
-									<div class="info-banner__inner">
-										<a href="#" class="info-banner__btn btn">Задать свой вопрос </a>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</section>
 			<!-- end of section top -->
-			<!-- questions -->
-			<div class="questions section-indent" id="questions">
+			<!-- about section -->
+			<section class="about-section">
 				<div class="container">
-					<div class="section-heading">
-						<h2 class="section-heading__title">Ответы на вопросы онлайн консультации</h2>
+					<div class="about-section__wrapper">
+						<div class="about-section__left">
+							<div class="about-section__body">
+								<h2 class="about-section__heading">Онлайн заключение договора</h2>
+								<p class="about-section__description">Для заключения онлайн договора предельно внимательно заполните все поля анкеты. После проверки ваших данных наши сотрудники свяжутся с вами!</p>
+							</div>
+						</div>
 					</div>
-					<div class="questions__wrap">
-						<div class="questions__left">
-							<div class="questions__top">
-								<div class="default-select questions__topics-select">
-									<select class="js-select">
-										<option value="0" data-placeholder="true">Все темы</option>
-										<option value="1">Коллекторы и приставы</option>
-										<option value="2">Банкротство физических лиц</option>
-										<option value="3">Банкротство с ипотекой</option>
-										<option value="4">Суды и судьи</option>
-										<option value="5">Финансовые управляющие</option>
-										<option value="6">Банкротство юридических лиц</option>
-									</select>
+					<nav class="section-nav section-indent-top">
+						<ul class="section-nav__list">
+							<li class="section-nav__item">
+								<a href="survey-bi.html" class="section-nav__link">Базовая информация</a>
+							</li>
+							<li class="section-nav__item">
+								<a href="survey-family.html" class="section-nav__link">Семья</a>
+							</li>
+							<li class="section-nav__item is--active">
+								<a href="survey-property.html" class="section-nav__link">Имущество</a>
+							</li>
+							<li class="section-nav__item">
+								<a href="survey-income.html" class="section-nav__link">Доходы</a>
+							</li>
+							<li class="section-nav__item">
+								<a href="survey-business.html" class="section-nav__link">Бизнес</a>
+							</li>
+							<li class="section-nav__item">
+								<a href="survey-creditors.html" class="section-nav__link">Кредиторы</a>
+							</li>
+							<li class="section-nav__item">
+								<a href="survey-debtors.html" class="section-nav__link">Дебиторы</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<!-- end of about section -->
+			<!-- survey -->
+			<section class="survey section-indent-top" id="survey">
+				<div class="container">
+					<form action="#" class="survey__wrap">
+						<div class="survey__wrap-block">
+							<div class="survey__top">
+								<h2 class="survey__heading">Текущая собственность</h2>
+								<p class="survey__description">Укажите список вашего недвижимого имущества, автомобилей, ценных бумаг или иного имущества</p>
+							</div>
+							<div class="survey__form">
+								<div class="survey__block">
+									<h3 class="survey__label">Тип имущества</h3>
+									<div class="survey__inner">
+										<div class="default-select survey__input survey__input--fifty">
+											<select class="js-select">
+												<option value="0" data-placeholder="true">Квартира</option>
+												<option value="1">Автомобиль</option>
+												<option value="2">Бизнес</option>
+											</select>
+										</div>
+									</div>
 								</div>
-								<div class="input-field questions__search">
-									<div class="input-field__inner">
-										<button class="input-field__btn">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-search"></use>
-											</svg>
-										</button>
-										<input type="text" id="question-search" class="input-field__input" placeholder="Поиск по вопросам">
+								<div class="survey__block">
+									<h3 class="survey__label">Дата приобретения</h3>
+									<div class="survey__inner">
+										<div class="input-field survey__input survey__input--fifty">
+											<div class="input-field__inner">
+												<input type="date" id="survey-buy-data" class="input-field__input" placeholder="01.01.1999">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="survey__block">
+									<h3 class="survey__label">Покупная стоимость</h3>
+									<div class="survey__inner">
+										<div class="input-field survey__input survey__input--fifty">
+											<div class="input-field__inner">
+												<input type="text" id="survey-sum" class="input-field__input" placeholder="Сумма в рублях">
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="questions__wrapper">
-								<article class="similar-questions-card questions__item">
-									<h3 class="similar-questions-card__title">Что нужно для банкротства <br>физического лица?</h3>
-									<a href="#" class="similar-questions-card__link">Ответ на вопрос →</a>
-								</article>
-								<article class="similar-questions-card questions__item">
-									<h3 class="similar-questions-card__title">Возможно ли банкротство <br>физического лица?</h3>
-									<a href="#" class="similar-questions-card__link">Ответ на вопрос →</a>
-								</article>
-								<article class="similar-questions-card questions__item">
-									<h3 class="similar-questions-card__title">Сколько стоит банкротство <br>физического лица в Москве?</h3>
-									<a href="#" class="similar-questions-card__link">Ответ на вопрос →</a>
-								</article>
-								<article class="similar-questions-card questions__item">
-									<h3 class="similar-questions-card__title">Возможно ли банкротство <br>физического лица?</h3>
-									<a href="#" class="similar-questions-card__link">Ответ на вопрос →</a>
-								</article>
+						</div>
+						<div class="survey__wrap-block">
+							<div class="survey__block">
+								<h3 class="survey__heading">Отсутствующее имущество</h3>
+								<p class="survey__description"><b>Укажите имущество, которое числится на регистрационном учете, но по факту отсутствует </b></p>
+							</div>
+							<div class="survey__block">
+								<a href="#" class="survey__btn survey__btn--add btn btn--border">Добавить</a>
 							</div>
 						</div>
-						<div class="questions__right">
-							<nav class="topics">
-								<ul class="topics__list is--short">
-									<li class="topics__item">
-										<button class="topics__btn">Все темы</button>
-									</li>
-									<li class="topics__item">
-										<button class="topics__btn">Коллекторы и приставы</button>
-									</li>
-									<li class="topics__item is--active">
-										<button class="topics__btn">Банкротство физических лиц</button>
-									</li>
-									<li class="topics__item">
-										<button class="topics__btn">Банкротство с ипотекой</button>
-									</li>
-									<li class="topics__item">
-										<button class="topics__btn">Суды и судьи</button>
-									</li>
-									<li class="topics__item">
-										<button class="topics__btn">Финансовые управляющие</button>
-									</li>
-									<li class="topics__item">
-										<button class="topics__btn">Банкротство юридических лиц </button>
-									</li>
-									<li class="topics__item">
-										<button class="topics__btn">Банкротство с ипотекой</button>
-									</li>
-									<li class="topics__item">
-										<button class="topics__btn">Суды и судьи</button>
-									</li>
-									<li class="topics__item">
-										<button class="topics__btn">Финансовые управляющие</button>
-									</li>
-									<li class="topics__item">
-										<button class="topics__btn topics__btn--more">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-more-dots"></use>
-											</svg>
-										</button>
-									</li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- end of questions -->
-			<!-- info banner -->
-			<section class="info-banner section-indent" id="tariff-banner">
-				<div class="container">
-					<div class="info-banner__wrapper">
-						<picture class="info-banner__img">
-							<img src="img/bankruptcy-img.svg" alt="Image">
-						</picture>
-						<div class="info-banner__body">
-							<h2 class="info-banner__title">Остались вопросы?</h2>
-							<p class="info-banner__description">Получите экспертную консультацию у наших специалистов или поговорите с юридическим представителем</p>
-							<div class="info-banner__inner">
-								<button class="info-banner__btn btn modal-btn" data-id="modal-consultation-questions">Заказать звонок</button>
+						<div class="survey__wrap-block">
+							<div class="survey__block">
+								<h3 class="survey__heading">Принадлежало в течение <br>10 последних лет</h3>
+								<p class="survey__description">Укажите список вашего недвижимого имущества, автомобилей, ценных бумаг или иного имущества, которым вы владели за последние 10 лет</p>
+							</div>
+							<div class="survey__block">
+								<a href="#" class="survey__btn survey__btn--add btn btn--border">Добавить</a>
 							</div>
 						</div>
-					</div>
+						<div class="survey__wrap-block">
+							<div class="survey__bottom">
+								<a href="#" class="survey__btn survey__btn--back btn btn--border">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
+								</a>
+								<a href="#" class="survey__btn btn">Сохранить и продолжить</a>
+							</div>
+						</div>
+					</form>
 				</div>
 			</section>
-			<!-- end of info banner -->
+			<!-- end of survey -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
