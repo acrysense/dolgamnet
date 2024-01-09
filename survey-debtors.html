@@ -201,7 +201,7 @@
 					</div>
 					<nav class="section-nav section-indent-top">
 						<ul class="section-nav__list">
-							<li class="section-nav__item is--active">
+							<li class="section-nav__item">
 								<a href="survey-bi.html" class="section-nav__link">Базовая информация</a>
 							</li>
 							<li class="section-nav__item">
@@ -219,7 +219,7 @@
 							<li class="section-nav__item">
 								<a href="survey-creditors.html" class="section-nav__link">Кредиторы</a>
 							</li>
-							<li class="section-nav__item">
+							<li class="section-nav__item is--active">
 								<a href="survey-debtors.html" class="section-nav__link">Дебиторы</a>
 							</li>
 						</ul>
@@ -232,215 +232,64 @@
 				<div class="container">
 					<form action="#" class="survey__wrap">
 						<div class="survey__wrap-block">
-							<div class="survey__top">
-								<h2 class="survey__heading">Базовая информация</h2>
+							<h2 class="survey__heading">Кредитор 1</h2>
+							<div class="survey__info">
+								<div class="survey__info-item">
+									<span class="survey__help">Фамилия Имя Отчество </span>
+									<span class="survey__value">Логинов Алексей Викторович </span>
+								</div>
+								<div class="survey__info-item">
+									<span class="survey__help">Юридический адрес</span>
+									<span class="survey__value">109439, г. Москва, ул. Новоророссийская, д. 13,кв. 62 </span>
+								</div>
+								<div class="survey__info-item">
+									<span class="survey__help">Документ об обязательстве</span>
+									<span class="survey__value">Договор денежного займа с процентами №51 от 25.08.2005 </span>
+								</div>
+								<div class="survey__info-item">
+									<span class="survey__help">Сумма</span>
+									<span class="survey__value">4 645 646 ₽ </span>
+								</div>
 							</div>
-							<div class="survey__form">
-								<div class="survey__block">
-									<h3 class="survey__label">Ваши Фамилия Имя Отчество*</h3>
-									<div class="survey__inner">
-										<div class="input-field survey__input">
-											<div class="input-field__inner">
-												<input type="text" id="survey-name" class="input-field__input" placeholder="ФИО (полностью)">
-											</div>
-										</div>
+						</div>
+						<div class="survey__wrap-block">
+							<div class="survey__block">
+								<h2 class="survey__heading">Кредитор 2</h2>
+								<div class="survey__info">
+									<div class="survey__info-item">
+										<span class="survey__help">Фамилия Имя Отчество </span>
+										<span class="survey__value">Логинов Алексей Викторович </span>
+									</div>
+									<div class="survey__info-item">
+										<span class="survey__help">Тип кредитора</span>
+										<span class="survey__value">Банк</span>
+									</div>
+									<div class="survey__info-item">
+										<span class="survey__help">Юридический адрес</span>
+										<span class="survey__value">109439, г. Москва, ул. Новоророссийская, д. 13,кв. 62 </span>
+									</div>
+									<div class="survey__info-item">
+										<span class="survey__help">Документ об обязательстве</span>
+										<span class="survey__value">Кредитный договор №80166 от 01.11.2018 </span>
+									</div>
+									<div class="survey__info-item">
+										<span class="survey__help">Сумма</span>
+										<span class="survey__value">400 646 ₽</span>
 									</div>
 								</div>
-								<div class="survey__block">
-									<h3 class="survey__label">Ваш пол*</h3>
-									<div class="survey__checkboxes">
-										<div class="circle-checkbox survey__checkbox">
-											<input type="radio" class="circle-checkbox__input" id="survey-sex-01" name="survey-sex">
-											<label for="survey-sex-01" class="circle-checkbox__group">
-												<span class="circle-checkbox__icon"></span>
-												<span class="circle-checkbox__title">Мужской</span>
-											</label>
-										</div>
-										<div class="circle-checkbox survey__checkbox">
-											<input type="radio" class="circle-checkbox__input" id="survey-sex-02" name="survey-sex">
-											<label for="survey-sex-02" class="circle-checkbox__group">
-												<span class="circle-checkbox__icon"></span>
-												<span class="circle-checkbox__title">Женский</span>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="survey__block">
-									<h3 class="survey__label">Семейное положение*</h3>
-									<div class="survey__checkboxes">
-										<div class="circle-checkbox survey__checkbox">
-											<input type="radio" class="circle-checkbox__input" id="survey-status-01" name="survey-status">
-											<label for="survey-status-01" class="circle-checkbox__group">
-												<span class="circle-checkbox__icon"></span>
-												<span class="circle-checkbox__title">Холост</span>
-											</label>
-										</div>
-										<div class="circle-checkbox survey__checkbox">
-											<input type="radio" class="circle-checkbox__input" id="survey-status-02" name="survey-status">
-											<label for="survey-status-02" class="circle-checkbox__group">
-												<span class="circle-checkbox__icon"></span>
-												<span class="circle-checkbox__title">В браке</span>
-											</label>
-										</div>
-										<div class="circle-checkbox survey__checkbox">
-											<input type="radio" class="circle-checkbox__input" id="survey-status-03" name="survey-status">
-											<label for="survey-status-03" class="circle-checkbox__group">
-												<span class="circle-checkbox__icon"></span>
-												<span class="circle-checkbox__title">Разведен</span>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="survey__block">
-									<h3 class="survey__label">Дата рождения*</h3>
-									<div class="survey__inner">
-										<div class="input-field survey__input survey__input--fifty">
-											<div class="input-field__inner">
-												<input type="date" id="survey-data" class="input-field__input" placeholder="01.01.1999">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="survey__block">
-									<h3 class="survey__label">
-										Место рождения*
-										<button class="tippy-trigger tippy-trigger--sm" data-id="tippy-tooltip">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-info-circle"></use>
-											</svg>
-										</button>
-									</h3>
-									<div class="survey__inner">
-										<div class="default-select survey__input survey__input--fifty">
-											<select class="js-select">
-												<option value="0" data-placeholder="true">Город</option>
-												<option value="1">Москва</option>
-												<option value="2">Санкт-Петербург</option>
-												<option value="3">Краснодар</option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="survey__block">
-									<h3 class="survey__label">
-										Адрес постоянной регистрации*
-										<button class="tippy-trigger tippy-trigger--sm" data-id="tippy-tooltip">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-info-circle"></use>
-											</svg>
-										</button>
-									</h3>
-									<div class="survey__inner">
-										<div class="input-field survey__input">
-											<div class="input-field__inner">
-												<input type="text" id="survey-address" class="input-field__input" placeholder="Страна, город, улица, дом, квартира">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="survey__block">
-									<h3 class="survey__label">
-										Адрес фактического проживания*
-										<button class="tippy-trigger tippy-trigger--sm" data-id="tippy-tooltip">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-info-circle"></use>
-											</svg>
-										</button>
-									</h3>
-									<div class="survey__inner">
-										<div class="input-field survey__input">
-											<div class="input-field__inner">
-												<input type="text" id="survey-address-current" class="input-field__input" placeholder="Страна, город, улица, дом, квартира">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="survey__block">
-									<h3 class="survey__label">
-										Наличие временной регистрации*
-										<button class="tippy-trigger tippy-trigger--sm" data-id="tippy-tooltip">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-info-circle"></use>
-											</svg>
-										</button>
-									</h3>
-									<div class="survey__checkboxes">
-										<div class="circle-checkbox survey__checkbox">
-											<input type="radio" class="circle-checkbox__input" id="survey-reg-01" name="survey-reg">
-											<label for="survey-reg-01" class="circle-checkbox__group">
-												<span class="circle-checkbox__icon"></span>
-												<span class="circle-checkbox__title">Есть</span>
-											</label>
-										</div>
-										<div class="circle-checkbox survey__checkbox">
-											<input type="radio" class="circle-checkbox__input" id="survey-reg-02" name="survey-reg">
-											<label for="survey-reg-02" class="circle-checkbox__group">
-												<span class="circle-checkbox__icon"></span>
-												<span class="circle-checkbox__title">Отсутстсвует</span>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="survey__block">
-									<h3 class="survey__label">Паспортные данные*</h3>
-									<div class="survey__inner">
-										<div class="input-field survey__input">
-											<div class="input-field__inner">
-												<input type="text" id="survey-pass-series" class="input-field__input" placeholder="Серия">
-											</div>
-										</div>
-										<div class="input-field survey__input">
-											<div class="input-field__inner">
-												<input type="text" id="survey-pass-num" class="input-field__input" placeholder="Номер">
-											</div>
-										</div>
-										<div class="input-field survey__input">
-											<div class="input-field__inner">
-												<input type="text" id="survey-pass-date" class="input-field__input" placeholder="Дата выдачи">
-											</div>
-										</div>
-										<div class="input-field survey__input">
-											<div class="input-field__inner">
-												<input type="text" id="survey-pass-number" class="input-field__input" placeholder="№ подразделения">
-											</div>
-										</div>
-									</div>
-									<div class="survey__inner">
-										<div class="input-field survey__input">
-											<div class="input-field__inner">
-												<input type="text" id="survey-pass-country" class="input-field__input" placeholder="Страна, город, улица, дом, квартира">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="survey__block">
-									<h3 class="survey__label">ИНН</h3>
-									<div class="survey__inner">
-										<div class="input-field survey__input">
-											<div class="input-field__inner">
-												<input type="text" id="survey-inn" class="input-field__input" placeholder="ИНН">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="survey__block">
-									<h3 class="survey__label">Снилс</h3>
-									<div class="survey__inner">
-										<div class="input-field survey__input">
-											<div class="input-field__inner">
-												<input type="text" id="survey-snils" class="input-field__input" placeholder="Снилс">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="survey__bottom">
-									<a href="#" class="survey__btn survey__btn--back btn btn--border">
-										<svg>
-											<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
-										</svg>
-									</a>
-									<a href="#" class="survey__btn btn">Сохранить и продолжить</a>
-								</div>
+							</div>
+							<div class="survey__block">
+								<a href="#" class="survey__btn survey__btn--add btn btn--border">Добавить кредитора </a>
+							</div>
+						</div>
+						<div class="survey__wrap-block">
+							<div class="survey__bottom">
+								<a href="#" class="survey__btn survey__btn--back btn btn--border">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
+								</a>
+								<a href="#" class="survey__btn btn">Сохранить и продолжить</a>
 							</div>
 						</div>
 					</form>
