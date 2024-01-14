@@ -191,138 +191,42 @@
 			<!-- survey -->
 			<section class="survey section-indent-top" id="survey">
 				<div class="container">
-					<div class="section-heading">
+					<div class="section-heading section-heading--md">
 						<h1 class="section-heading__title">Тест: подходит ли банкротство?</h1>
 					</div>
 					<form action="#" class="survey__wrap">
 						<div class="survey__wrap-block">
 							<div class="survey__top">
-								<h2 class="survey__heading">Шаг 4. Информация о доходах и расходах</h2>
+								<h2 class="survey__heading">Шаг 5. Имущество и иные активы</h2>
 							</div>
 							<div class="survey__form">
 								<div class="survey__block">
-									<h3 class="survey__label">
-										Регион постоянной регистрации
+									<h3 class="survey__title">
+										Имущество
 										<button class="tippy-trigger tippy-trigger--sm" data-id="tippy-tooltip">
 											<svg>
 												<use xlink:href="img/sprite.svg#icon-info-circle"></use>
 											</svg>
 										</button>
 									</h3>
+								</div>
+								<div class="survey__block">
+									<h3 class="survey__label">Вид имущества</h3>
 									<div class="survey__inner">
-										<div class="input-field survey__input">
-											<div class="input-field__inner">
-												<input type="number" id="survey-num" class="input-field__input" placeholder="0">
-											</div>
+										<div class="default-select survey__input survey__input--fifty">
+											<select class="js-select">
+												<option value="1">Автомобиль</option>
+												<option value="2">Квартира</option>
+												<option value="3">Дом</option>
+												<option value="4">Бизнес</option>
+											</select>
 										</div>
 									</div>
 								</div>
 								<div class="survey__block">
-									<h3 class="survey__label">
-										Ваш возраст
-										<button class="tippy-trigger tippy-trigger--sm" data-id="tippy-tooltip">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-info-circle"></use>
-											</svg>
-										</button>
-									</h3>
+									<h3 class="survey__label">Рыночная стоимость, ₽</h3>
 									<div class="survey__inner">
-										<div class="input-field survey__input">
-											<div class="input-field__inner">
-												<input type="number" id="survey-num" class="input-field__input" placeholder="Полных лет">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="survey__block">
-									<h3 class="survey__label">Пол</h3>
-									<div class="survey__checkboxes">
-										<div class="circle-checkbox survey__checkbox">
-											<input type="radio" class="circle-checkbox__input" id="survey-sex-01" name="survey-sex">
-											<label for="survey-sex-01" class="circle-checkbox__group">
-												<span class="circle-checkbox__icon"></span>
-												<span class="circle-checkbox__title">Мужсой</span>
-											</label>
-										</div>
-										<div class="circle-checkbox survey__checkbox">
-											<input type="radio" class="circle-checkbox__input" id="survey-sex-02" name="survey-sex">
-											<label for="survey-sex-02" class="circle-checkbox__group">
-												<span class="circle-checkbox__icon"></span>
-												<span class="circle-checkbox__title">Женский</span>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="survey__block">
-									<h3 class="survey__label">Занятость</h3>
-									<div class="survey__checkboxes">
-										<div class="circle-checkbox survey__checkbox">
-											<input type="radio" class="circle-checkbox__input" id="survey-sex-01" name="survey-sex">
-											<label for="survey-sex-01" class="circle-checkbox__group">
-												<span class="circle-checkbox__icon"></span>
-												<span class="circle-checkbox__title">Наемный работник</span>
-											</label>
-										</div>
-										<div class="circle-checkbox survey__checkbox">
-											<input type="radio" class="circle-checkbox__input" id="survey-sex-02" name="survey-sex">
-											<label for="survey-sex-02" class="circle-checkbox__group">
-												<span class="circle-checkbox__icon"></span>
-												<span class="circle-checkbox__title">Индивидуальный предприниматель </span>
-											</label>
-										</div>
-										<div class="circle-checkbox survey__checkbox">
-											<input type="radio" class="circle-checkbox__input" id="survey-sex-02" name="survey-sex">
-											<label for="survey-sex-02" class="circle-checkbox__group">
-												<span class="circle-checkbox__icon"></span>
-												<span class="circle-checkbox__title">Самозанятый</span>
-											</label>
-										</div>
-										<div class="circle-checkbox survey__checkbox">
-											<input type="radio" class="circle-checkbox__input" id="survey-sex-02" name="survey-sex">
-											<label for="survey-sex-02" class="circle-checkbox__group">
-												<span class="circle-checkbox__icon"></span>
-												<span class="circle-checkbox__title">Пенсионер</span>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="survey__block">
-									<h3 class="survey__label">Семейное положение</h3>
-									<div class="survey__checkboxes">
-										<div class="circle-checkbox survey__checkbox">
-											<input type="radio" class="circle-checkbox__input" id="survey-sex-01" name="survey-sex">
-											<label for="survey-sex-01" class="circle-checkbox__group">
-												<span class="circle-checkbox__icon"></span>
-												<span class="circle-checkbox__title">Состою в браке</span>
-											</label>
-										</div>
-										<div class="circle-checkbox survey__checkbox">
-											<input type="radio" class="circle-checkbox__input" id="survey-sex-02" name="survey-sex">
-											<label for="survey-sex-02" class="circle-checkbox__group">
-												<span class="circle-checkbox__icon"></span>
-												<span class="circle-checkbox__title">Холост</span>
-											</label>
-										</div>
-										<div class="circle-checkbox survey__checkbox">
-											<input type="radio" class="circle-checkbox__input" id="survey-sex-02" name="survey-sex">
-											<label for="survey-sex-02" class="circle-checkbox__group">
-												<span class="circle-checkbox__icon"></span>
-												<span class="circle-checkbox__title">Вдова/вдовец</span>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="survey__block">
-									<h3 class="survey__label">
-										Среднемесячный доход, ₽
-										<button class="tippy-trigger tippy-trigger--sm" data-id="tippy-tooltip">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-info-circle"></use>
-											</svg>
-										</button>
-									</h3>
-									<div class="survey__inner">
-										<div class="input-field survey__input">
+										<div class="input-field survey__input survey__input--fifty">
 											<div class="input-field__inner">
 												<input type="number" id="survey-num" class="input-field__input" placeholder="Сумма в рублях">
 											</div>
@@ -330,7 +234,7 @@
 									</div>
 								</div>
 								<div class="survey__block">
-									<h3 class="survey__label">Арендуете ли Вы жилье?</h3>
+									<h3 class="survey__label">Заложено</h3>
 									<div class="survey__checkboxes">
 										<div class="circle-checkbox survey__checkbox">
 											<input type="radio" class="circle-checkbox__input" id="survey-sex-01" name="survey-sex">
@@ -349,11 +253,121 @@
 									</div>
 								</div>
 								<div class="survey__block">
-									<h3 class="survey__label">Сумма арендной платы, ₽</h3>
+									<a href="#" class="survey__link">Добавить имущество </a>
+								</div>
+							</div>
+						</div>
+						<div class="survey__wrap-block">
+							<div class="survey__form">
+								<div class="survey__block">
+									<h3 class="survey__title">
+										Долги перед вами
+										<button class="tippy-trigger tippy-trigger--sm" data-id="tippy-tooltip">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-info-circle"></use>
+											</svg>
+										</button>
+									</h3>
+								</div>
+								<div class="survey__block">
+									<h3 class="survey__label">Дебитор</h3>
 									<div class="survey__inner">
-										<div class="input-field survey__input">
+										<div class="default-select survey__input survey__input--fifty">
+											<select class="js-select">
+												<option value="1">Физическое лицо</option>
+												<option value="2">Юридическое лицо</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="survey__block">
+									<h3 class="survey__label">Сумма долга, ₽</h3>
+									<div class="survey__inner">
+										<div class="input-field survey__input survey__input--fifty">
 											<div class="input-field__inner">
 												<input type="number" id="survey-num" class="input-field__input" placeholder="Сумма в рублях">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="survey__block">
+									<div class="survey__checkboxes">
+										<div class="square-checkbox survey__checkbox">
+											<input type="checkbox" class="square-checkbox__input" id="survey-data-deb-01">
+											<label for="survey-data-deb-01" class="square-checkbox__group">
+												<span class="square-checkbox__icon"></span>
+												<span class="square-checkbox__title">Решение суда по долгу</span>
+											</label>
+										</div>
+										<div class="square-checkbox survey__checkbox">
+											<input type="checkbox" class="square-checkbox__input" id="survey-data-deb-02">
+											<label for="survey-data-deb-02" class="square-checkbox__group">
+												<span class="square-checkbox__icon"></span>
+												<span class="square-checkbox__title">Безнадежный долг</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="survey__block">
+									<a href="#" class="survey__link">Добавить дебитора </a>
+								</div>
+							</div>
+						</div>
+						<div class="survey__wrap-block">
+							<div class="survey__form">
+								<div class="survey__block">
+									<h3 class="survey__title">
+										Участником или учредителем скольких юр. лиц Вы являетесь?
+									</h3>
+								</div>
+								<div class="survey__block">
+									<div class="survey__inner">
+										<div class="input-field survey__input survey__input--fifty">
+											<div class="input-field__inner">
+												<input type="number" id="survey-num" class="input-field__input" placeholder="Укажите число">
+											</div>
+										</div>
+									</div>
+									<div class="survey__inner">
+										<div class="input-field survey__input survey__input--fifty">
+											<div class="input-field__inner">
+												<input type="number" id="survey-num" class="input-field__input" placeholder="ИНН">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="survey__block">
+									<a href="#" class="survey__link">Проверить</a>
+								</div>
+							</div>
+						</div>
+						<div class="survey__wrap-block">
+							<div class="survey__form">
+								<div class="survey__block">
+									<h3 class="survey__label">Есть ли у вас инвестиционные брокерские счета?</h3>
+									<div class="survey__checkboxes">
+										<div class="circle-checkbox survey__checkbox">
+											<input type="radio" class="circle-checkbox__input" id="survey-sex-01" name="survey-sex">
+											<label for="survey-sex-01" class="circle-checkbox__group">
+												<span class="circle-checkbox__icon"></span>
+												<span class="circle-checkbox__title">Да</span>
+											</label>
+										</div>
+										<div class="circle-checkbox survey__checkbox">
+											<input type="radio" class="circle-checkbox__input" id="survey-sex-02" name="survey-sex">
+											<label for="survey-sex-02" class="circle-checkbox__group">
+												<span class="circle-checkbox__icon"></span>
+												<span class="circle-checkbox__title">Нет</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="survey__block">
+									<h3 class="survey__label">Остатки денежных средств на всех ваших счетах, включая <br>инвестиционные/брокерские счета</h3>
+									<div class="survey__inner">
+										<div class="input-field survey__input survey__input--fifty">
+											<div class="input-field__inner">
+												<input type="number" id="survey-num" class="input-field__input" placeholder="Введите сумму в рублях">
 											</div>
 										</div>
 									</div>
@@ -2079,6 +2093,27 @@
 							<span class="c-change-user__help">Договор № 1542125-12/85</span>
 						</a>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-survey-check">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="modal__top">
+					<h2 class="modal__heading">Что это за проверка?</h2>
+				</div>
+				<div class="modal__content content content--sm">
+					<p>Внесудебное банкротство с долгами в размере от 50 до 500 тысяч рублей возможно лишь при условии, что по Вашим долгам уже «работала» служба приставов, а именно:</p>
+					<ul>
+						<li>Имеются исполнительные производства, оконченные на основании пункта 4 части 1 статьи 46 Федерального закона от 2 октября 2007 года N 229-ФЗ «Об исполнительном производстве».</li>
+						<li>После последнего из оконченных исполнительных производств на основании п.4 ч. 1 ст. 46 ФЗ «Об исполнительном производстве» не возбуждались новые исполнительные производства.</li>
+					</ul>
 				</div>
 			</div>
 		</div>
