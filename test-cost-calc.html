@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ДОЛГАМ.НЕТ - Калькулятор стоимости банкротства</title>
-	<meta property="og:title" content="ДОЛГАМ.НЕТ - Калькулятор стоимости банкротства">
+	<title>ДОЛГАМ.НЕТ - Тест: подходит ли банкротство?</title>
+	<meta property="og:title" content="ДОЛГАМ.НЕТ - Тест: подходит ли банкротство?">
 	<meta property="og:description" content="Описание">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="ДОЛГАМ.НЕТ - Калькулятор стоимости банкротства">
+	<meta property="og:site_name" content="ДОЛГАМ.НЕТ - Тест: подходит ли банкротство?">
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -188,123 +188,125 @@
 				</div>
 			</section>
 			<!-- end of section top -->
-			<!-- big banner -->
-			<section class="big-banner big-banner--mobile-wide">
+			<!-- survey -->
+			<section class="survey section-indent-top" id="survey">
 				<div class="container">
-					<div class="big-banner__wrapper">
-						<div class="big-banner__body">
-							<h2 class="big-banner__heading">Калькулятор стоимости банкротства</h2>
-							<p class="big-banner__description">
-								Стоимость, которая будет рассчитана в данном калькуляторе, при условии, что вы корректно заполнили все данные, будет на 100% соответствовать той стоимости, которую рассчитают наши специалисты в офисе.
-								<br><br>
-								Мы гарантируем, что у нас нет никаких скрытых и дополнительных платежей, чтобы привлечь клиента, а потом накрутить цену. Для Вас цена в договоре будет конечной от обращения в нашу компанию до момента полного списания Ваших долгов.
-							</p>
+					<div class="section-heading section-heading--md">
+						<h1 class="section-heading__title">Тест: подходит ли банкротство?</h1>
+					</div>
+					<form action="#" class="survey__wrap">
+						<div class="survey__wrap-block">
+							<div class="survey__top">
+								<h3 class="survey__heading">Стоимость процедуры банкротства рассчитана</h3>
+							</div>
+							<div class="survey__form">
+								<div class="survey__block">
+									<h3 class="survey__subtitle">Вероятность списания долгов <br>в Вашей ситуации составляет</h3>
+									<div class="c-status-lg survey__status-lg">
+										<picture class="c-status-lg__img c-status-lg__img--md">
+											<img src="img/icon-status-ok.svg" alt="Icon">
+										</picture>
+										<div class="c-status-lg__body">
+											<h3 class="c-status-lg__value">96,07 %</h3>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<picture class="big-banner__img">
-							<img src="img/debtors-tools-01.svg" alt="Image">
+						<div class="survey__wrap-block">
+							<div class="survey__form">
+								<div class="survey__block">
+									<h3 class="survey__label">
+										Стоимость юридических услуг
+										<button class="tippy-trigger tippy-trigger--sm" data-id="tippy-tooltip">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-info-circle"></use>
+											</svg>
+										</button>
+									</h3>
+									<span class="survey__heading">222 000 ₽</span>
+								</div>
+								<div class="survey__block">
+									<h3 class="survey__label">
+										Нотариальная доверенность
+										<button class="tippy-trigger tippy-trigger--sm" data-id="tippy-tooltip">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-info-circle"></use>
+											</svg>
+										</button>
+									</h3>
+									<span class="survey__heading">2 500 ₽</span>
+								</div>
+								<div class="survey__block">
+									<h3 class="survey__label">
+										Госпошлина в арбитражный суд
+										<button class="tippy-trigger tippy-trigger--sm" data-id="tippy-tooltip">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-info-circle"></use>
+											</svg>
+										</button>
+									</h3>
+									<span class="survey__heading">300 ₽</span>
+								</div>
+								<div class="survey__block">
+									<h3 class="survey__label">
+										Депозит в суд на вознаграждение финансового управляющего
+										<button class="tippy-trigger tippy-trigger--sm" data-id="tippy-tooltip">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-info-circle"></use>
+											</svg>
+										</button>
+									</h3>
+									<span class="survey__heading">25 000 ₽</span>
+								</div>
+							</div>
+						</div>
+						<div class="survey__wrap-block">
+							<div class="survey__form">
+								<div class="survey__block">
+									<h3 class="survey__total">Итого: <span>247 800 ₽</span></h3>
+								</div>
+								<div class="survey__block">
+									<div class="survey-notice survey-notice--green">
+										<h3 class="survey-notice__subtitle">Хотите удостовериться?</h3>
+										<p class="survey-notice__description">Наши юристы проверят еще раз Ваши данные вручную и вынесут окончательный вердикт </p>
+										<div class="survey-notice__form">
+											<div class="survey-notice__inner">
+												<div class="input-field survey-notice__input">
+													<div class="input-field__inner">
+														<input type="email" id="survey-email" class="input-field__input" placeholder="Введите e-mail">
+													</div>
+												</div>
+												<button class="survey-notice__btn btn">Отправить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<!-- end of survey -->
+			<!-- info banner -->
+			<section class="info-banner section-indent" id="competition-banner">
+				<div class="container">
+					<div class="info-banner__wrapper info-banner__wrapper--reverse">
+						<picture class="info-banner__img info-banner__img--lg">
+							<img src="img/competition-img.svg" alt="Image">
 						</picture>
-					</div>
-				</div>
-			</section>
-			<!-- end of big banner -->
-			<!-- about section -->
-			<section class="about-section section-indent">
-				<div class="container">
-					<div class="about-section__wrapper">
-						<div class="about-section__left">
-							<div class="about-section__body">
-								<h2 class="about-section__heading">Полностью спишем долги или вернем деньги</h2>
-								<p class="about-section__description">
-									Рассчитайте с тоимость процедуры банкротства с помощью нашего<br>
-									онлайн калькулятора, и будьте уверены, что сумма остнется неизменной<br>
-									в течении всей процедуры банкротства.
-									<br><br>
-									Мы работаем по ФЗ № 127.Вам не придется собирать документы, ходить в суд и переживать о результате.
-								</p>
+						<div class="info-banner__body">
+							<span class="info-banner__status">Акция</span>
+							<h2 class="info-banner__title">Конкурс историй <br>«мои неподьемные долги»</h2>
+							<p class="info-banner__description">Примите участие в акции и расскажите, из-за каких жизненных обстоятельств вы утратили возможность платить по долгам. Победитель ежемесячного подведения итогов на самый жестокий удар судьбы получает бесплатное проведение процедуры банкротства.</p>
+							<div class="info-banner__inner">
+								<a href="#" class="info-banner__btn btn">Подробнее об акции</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- end of about section -->
-			<!-- debt statistics -->
-			<div class="debt-statistics section-indent-top" id="debt-statistics">
-				<div class="container">
-					<div class="debt-statistics__wrapper">
-						<article class="debt-statistics__item">
-							<div class="debt-statistics__top">
-								<div class="debt-statistics__group">
-									<h3 class="debt-statistics__heading">Списали свои долги</h3>
-								</div>
-								<div class="debt-statistics__group">
-									<picture class="debt-statistics__icon">
-										<img src="img/thumb-up.svg" alt="Image">
-									</picture>
-								</div>
-							</div>
-							<div class="debt-statistics__main">
-								<div class="debt-statistics__elems">
-									<div class="debt-statistics__elem">
-										<span class="debt-statistics__value">521 000 чел.</span>
-										<span class="debt-statistics__help">внесудебное банкротство</span>
-									</div>
-									<div class="debt-statistics__elem">
-										<span class="debt-statistics__value">985 000 чел.</span>
-										<span class="debt-statistics__help">Судебное банкротство</span>
-									</div>
-								</div>
-							</div>
-						</article>
-						<article class="debt-statistics__item debt-statistics__item--red">
-							<div class="debt-statistics__top">
-								<div class="debt-statistics__group">
-									<h3 class="debt-statistics__heading">Остались с долгами</h3>
-									<p class="debt-statistics__help">Дела были прекращены или завершились без списания долгов</p>
-								</div>
-								<div class="debt-statistics__group">
-									<picture class="debt-statistics__icon">
-										<img src="img/thumb-down.svg" alt="Image">
-									</picture>
-								</div>
-							</div>
-							<div class="debt-statistics__main">
-								<div class="debt-statistics__elems">
-									<div class="debt-statistics__elem">
-										<span class="debt-statistics__value">341 чел.</span>
-										<span class="debt-statistics__help">внесудебное банкротство</span>
-									</div>
-									<div class="debt-statistics__elem">
-										<span class="debt-statistics__value">423 чел.</span>
-										<span class="debt-statistics__help">Судебное банкротство</span>
-									</div>
-								</div>
-							</div>
-						</article>
-					</div>
-					<p class="debt-statistics__summary">* Суммарные показатели. Рассчитаны с 2015 года на основании официальных публикаций в картотеке арбитражных дел и ЕФРСБ.</p>
-				</div>
-			</div>
-			<!-- end of debt statistics -->
-			<!-- about section -->
-			<section class="about-section section-indent">
-				<div class="container">
-					<div class="about-section__wrapper">
-						<div class="about-section__left">
-							<div class="about-section__body">
-								<h2 class="about-section__heading">Получите технологичную отточенную юридическую помощь</h2>
-								<p class="about-section__description">
-									Методика тестирования основана на нашем опыте проведения более 10 000 консультаций по банкротству. Она предусматривает все возможные нюансы и позволяет с 99% точностью оценить подходит ли вам банкротство.
-									<br><br>
-									Мы автоматическки обрабатываем сотни тысяч судебных актов по банкротству. Искусственный интеллект оперативно реагирует на изменения в судебной практике конкретного региона/суда и учитывает их в вопросах теста.
-									<br><br>
-									Вместе с точной оценкой исходных перспектив по банкротству вы получаете расклад по предстоящим сложностям и сможете акцентировать на них свое внимание при получении юридической консультации.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end of about section -->
+			<!-- end of info banner -->
 			<!-- other debtor tools -->
 			<section class="o-debtor-tools section-indent" id="o-debtor-tools">
 				<div class="container">
