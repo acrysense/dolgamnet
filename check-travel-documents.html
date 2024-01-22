@@ -211,47 +211,57 @@
 			<section class="survey section-indent" id="survey">
 				<div class="container">
 					<form action="#" class="survey__wrap">
-						<div class="survey__wrap-block">
-							<div class="survey__top">
-								<h2 class="survey__heading">Проверить запрет на выезд заграницу</h2>
-							</div>
-							<div class="survey__form">
-								<div class="survey__block">
-									<div class="survey__inner">
-										<div class="input-field survey__input">
-											<div class="input-field__inner">
-												<input type="number" id="survey-num" class="input-field__input" placeholder="Фамилия*">
-											</div>
-										</div>
-										<div class="input-field survey__input">
-											<div class="input-field__inner">
-												<input type="number" id="survey-num" class="input-field__input" placeholder="Имя*">
-											</div>
-										</div>
-										<div class="input-field survey__input">
-											<div class="input-field__inner">
-												<input type="number" id="survey-num" class="input-field__input" placeholder="Отчество*">
-											</div>
-										</div>
+						<div class="survey__wrap-inner">
+							<div class="survey__wrap-left">
+								<div class="survey__wrap-block">
+									<div class="survey__top">
+										<h2 class="survey__heading">Проверить запрет на выезд заграницу</h2>
 									</div>
-									<div class="survey__inner">
-										<div class="input-field survey__input">
-											<div class="input-field__inner">
-												<input type="date" id="survey-date" class="input-field__input" placeholder="Дата рождения*">
+									<div class="survey__form">
+										<div class="survey__block">
+											<div class="survey__inner">
+												<div class="input-field survey__input">
+													<div class="input-field__inner">
+														<input type="number" id="survey-num" class="input-field__input" placeholder="Фамилия*">
+													</div>
+												</div>
+												<div class="input-field survey__input">
+													<div class="input-field__inner">
+														<input type="number" id="survey-num" class="input-field__input" placeholder="Имя*">
+													</div>
+												</div>
+												<div class="input-field survey__input">
+													<div class="input-field__inner">
+														<input type="number" id="survey-num" class="input-field__input" placeholder="Отчество*">
+													</div>
+												</div>
+											</div>
+											<div class="survey__inner">
+												<div class="input-field survey__input">
+													<div class="input-field__inner">
+														<input type="date" id="survey-date" class="input-field__input" placeholder="Дата рождения*">
+													</div>
+												</div>
+												<div class="default-select survey__input">
+													<select class="js-select">
+														<option value="0" data-placeholder="true">Регион*</option>
+														<option value="1">Москва</option>
+														<option value="2">Санкт-Петербург</option>
+														<option value="3">Краснодар</option>
+													</select>
+												</div>
 											</div>
 										</div>
-										<div class="default-select survey__input">
-											<select class="js-select">
-												<option value="0" data-placeholder="true">Регион*</option>
-												<option value="1">Москва</option>
-												<option value="2">Санкт-Петербург</option>
-												<option value="3">Краснодар</option>
-											</select>
+										<div class="survey__bottom">
+											<a href="#" class="survey__btn btn">Отправить запрос</a>
 										</div>
 									</div>
 								</div>
-								<div class="survey__bottom">
-									<a href="#" class="survey__btn btn">Отправить запрос</a>
+							</div>
+							<div class="survey__wrap-right">
+								<div class="survey-notice survey__wrap-sticky">
+									<h4 class="survey-notice__subtitle">Справка</h4>
+									<p class="survey-notice__description survey-notice__description--sm">О том, как происходит онлайн проверка наличия запретов на выезд за границу, и как провести проверку самостоятельно, читайте в статье <a href="#">«Запрет на выезд за границу за долги»</a></p>
 								</div>
 							</div>
 						</div>
@@ -275,6 +285,11 @@
 									</ul>
 								</div>
 							</div>
+						</div>
+						<div class="about-section__right about-section__right--desktop">
+							<picture class="about-section__content-img">
+								<img src="img/border-img.svg" alt="Image">
+							</picture>
 						</div>
 					</div>
 				</div>
